@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
-* Студент: [Anastasia Alimpieva](https://up.htmlacademy.ru/htmlcss/25/user/120928).
-* Наставник: `Неизвестно`.
+- Студент: [Anastasia Alimpieva](https://up.htmlacademy.ru/htmlcss/25/user/120928).
+- Наставник: Юлия Антонова.
 
 ---
 
