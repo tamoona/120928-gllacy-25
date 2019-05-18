@@ -51,30 +51,26 @@
       </nav>
     </header>
     <main class="container">
-      <h1 class="visually-hidden">Преимущества</h1>
+      <h1 class="visually-hidden">Магазин Глэйси</h1>
       <section class="features">
         <h2>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
-        <div class="grid-container">
-          <div class="grid-column-6">
-            <img class="icon icon-icecream" src="http://placehold.it/24x24" />
-            <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
-            <img class="icon icon-leaf" src="http://placehold.it/24x24" />
-            <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
-          </div>
-          <div class="grid-column-6">
-            <img class="icon icon-cow" src="http://placehold.it/24x24" />
-            <p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
-            <img class="icon icon-thermometer" src="http://placehold.it/24x24" />
-            <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
-          </div>
-        </div>
+        <ul class="container-features">
+          <!-- <img class="icon icon-icecream" /> -->
+          <li>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
+          <!-- <img class="icon icon-leaf" /> -->
+          <li>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
+          <!-- <img class="icon icon-cow" /> -->
+          <li>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
+          <!-- <img class="icon icon-thermometer" /> -->
+          <li>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
+        </ul>
       </section>
-      <div class="grid-container">
-        <section class="blog grid-column-6">
-          <h2>Новое в нашем блоге</h2>
+      <div class="news">
+        <section class="blog">
+          <div class="blog-title">Новое в нашем блоге</div>
           <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
         </section>
-        <section class="subscription grid-column-6">
+        <section class="subscription">
           <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
           <input />
           <button class="button">Отправить</button>
@@ -83,14 +79,14 @@
     </main>
     <footer class="main-footer">
       <section class="map">
-        <img class="map-contacts" src="http://placehold.it/400x350" />
-        <h6>Адрес главного офиса и офлайн-магазина:</h6>
+        <img class="map-contacts" src="http://placehold.it/400x350" alt="Расположение магазина на карте" />
+        <div class="form-title">Адрес главного офиса и офлайн-магазина:</div>
         <p>ул. Большая Конюшенная <br />19/8, Санкт-Петербург</p>
         <p>Для заказов по телефону: <br />8 812 450-25-25 <br />(с 10 до 20 ежедневно)</p>
         <button class="button">Форма обратной связи</button>
       </section>
-      <div class="grid-container">
-        <ul class="social-media grid-column-3">
+      <div class="communication">
+        <ul class="social-media">
           <li><a class="social-button" href="#">Twitter</a></li>
           <li><a class="social-button" href="#">Instagram</a></li>
           <li><a class="social-button" href="#">Facebook</a></li>
@@ -98,7 +94,10 @@
         </ul>
         <nav class="footer-additional-information grid-column-6">
           <ul class="footer-navigation">
-            <li><img class="icon icon-heart" src="http://placehold.it/10x10" /><a class="footer-additional-information-button" href="#">Для поставщиков</a></li>
+            <li>
+              <!-- <img class="icon icon-heart" src="http://placehold.it/10x10" alt="Для поставщиков" /> -->
+              <a class="footer-additional-information-button" href="#">Для поставщиков</a>
+            </li>
             <li>
               <a class="footer-additional-information-button" href="#">О производстве</a>
             </li>
