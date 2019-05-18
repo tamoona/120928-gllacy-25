@@ -12,7 +12,14 @@
         </a>
         <ul class="site-navigation">
           <li>
-            <a href="catalog.html">Каталог</a>
+            <a href="catalog.html">Каталог </a>
+            <ul class="dropdown-catalog">
+              <li class="dropdown-catalog-highlighted">Новинки</li>
+              <li>Сливочное</li>
+              <li>Щербеты</li>
+              <li>Фруктовый лёд</li>
+              <li>Мелорин</li>
+            </ul>
           </li>
           <li>
             <a href="payment.html">Доставка и оплата</a>
@@ -22,8 +29,23 @@
           </li>
         </ul>
         <ul class="user-navigation">
-          <li class="search">Поиск по сайту</li>
-          <li class="login-link">Вход</li>
+          <li class="search">
+            <!-- Поиск по сайту -->
+            <div class="dropdown-search">
+              <input placeholder="Что ищем?" />
+            </div>
+          </li>
+          <li class="login-link">
+            Вход
+            <div class="dropdown-exit">
+              <input placeholder="Электронная почта" />
+              <input placeholder="Пароль" />
+              <button class="button">Войти</button>
+              <a href="#">Забыли пароль?</a>
+              <a href="#">Новая регистрация</a>
+            </div>
+          </li>
+
           <li class="basket">Корзина</li>
         </ul>
       </nav>
@@ -63,7 +85,7 @@
           <h6>Адрес главного офиса и офлайн-магазина:</h6>
           <p>ул. Большая Конюшенная <br />19/8, Санкт-Петербург</p>
           <p>Для заказов по телефону: <br />8 812 450-25-25 <br />(с 10 до 20 ежедневно)</p>
-          <a class="button" href="contacts.html">Форма обратной связи</a>
+          <button class="button">Форма обратной связи</button>
         </section>
         <div class="grid-container">
           <ul class="social-media grid-column-3">
