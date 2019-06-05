@@ -267,13 +267,17 @@
       </div>
     </footer>
     <div class="modal">
-      <form class="feedback">
+      <form class="feedback" action="/contact" method="post">
         <h3>Мы обязательно вам ответим!</h3>
-        <input name="name" type="text" placeholder="Как вас зовут?" />
-        <br />
-        <input name="email" type="email" placeholder="Ваша почта для ответа?" />
-        <br />
-        <textarea name="comment" placeholder="Напишите что-нибудь..." rows="3"></textarea> <br />
+        <div class="form-row">
+          <input name="name" type="text" placeholder="Как вас зовут?" />
+        </div>
+        <div class="form-row">
+          <input name="email" type="email" placeholder="Ваша почта для ответа?" />
+        </div>
+        <div class="form-row">
+          <textarea name="comment" placeholder="Напишите что-нибудь..." rows="3"></textarea>
+        </div>
         <input class="button" type="submit" value="Отправить" />
       </form>
     </div>
