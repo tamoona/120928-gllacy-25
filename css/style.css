@@ -35,3 +35,8 @@ a {
 
   color: #ffffff;
 }
+
+.site-navigation,
+.user-navigation {
+  list-style: none;
+}
