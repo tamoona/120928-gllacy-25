@@ -15,3 +15,23 @@ body {
 a {
   text-decoration: none;
 }
+
+.main-header {
+  position: relative;
+  padding-top: 0;
+}
+
+.main-header-logo {
+  margin: 0;
+  padding: 0;
+  margin-right: 9px;
+  padding-top: 8px;
+}
+
+.main-navigation {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+
+  color: #ffffff;
+}
