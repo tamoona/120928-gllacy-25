@@ -40,3 +40,18 @@ a {
 .user-navigation {
   list-style: none;
 }
+
+.site-navigation a,
+.user-navigation a {
+  color: #ffffff;
+}
+
+.site-navigation a:hover,
+.user-navigation a:hover {
+  background-color: #fbded7;
+}
+
+.site-navigation a:focus,
+.user-navigation a:focus {
+  background-color: #f6b5a5;
+}
