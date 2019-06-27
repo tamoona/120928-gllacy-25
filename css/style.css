@@ -357,6 +357,12 @@ input[type="radio"].visually-hidden {
 .user-navigation-item {
   display: inline-block;
   vertical-align: middle;
+  position: relative;
+}
+
+.site-navigation-item:hover .dropdown,
+.user-navigation-item:hover .dropdown {
+  display: block;
 }
 
 .site-navigation,
@@ -386,10 +392,6 @@ input[type="radio"].visually-hidden {
   border-radius: 21px;
 }
 
-.site-navigation-item {
-  position: relative;
-}
-
 .site-navigation-item > a {
   display: block;
   margin-right: 1px;
@@ -414,8 +416,8 @@ input[type="radio"].visually-hidden {
 
 .dropdown {
   position: absolute;
-  top: 37px;
-  left: -6px;
+  top: 36px;
+  left: 0;
   z-index: 10;
   display: none;
   width: 143px;
@@ -424,6 +426,11 @@ input[type="radio"].visually-hidden {
   background-color: #f8f7f4;
   border-radius: 5px;
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+}
+
+.dropdown-reversed {
+  left: auto;
+  right: 0;
 }
 
 .dropdown-item {
