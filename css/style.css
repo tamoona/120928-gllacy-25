@@ -19,6 +19,10 @@ a {
   text-decoration: none;
 }
 
+.text-right {
+  text-align: right;
+}
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -198,41 +202,20 @@ input[type="radio"].visually-hidden {
   left: -5px;
   z-index: 10;
   list-style: none;
-  width: 143px;
-  min-height: 165px;
-  padding-top: 5px;
-  padding-bottom: 4px;
+  padding: 20px 15px;
   background-color: #f8f7f4;
   border-radius: 5px;
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 }
 
-.dropdown-reversed {
-  left: auto;
-  right: 0;
-}
-
 .dropdown a {
   margin: 0;
   padding: 0;
-  padding-left: 20px;
-  padding-top: 8px;
-  padding-bottom: 8px;
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
   color: #323232;
   list-style: none;
-}
-
-.dropdown::before {
-  position: absolute;
-  top: 38px;
-  left: 7px;
-  content: "";
-  width: 128px;
-  height: 1px;
-  background-color: #d1d0ce;
 }
 
 .dropdown-link:hover,
@@ -499,6 +482,63 @@ input[type="radio"].visually-hidden {
   font-size: 13px;
   font-weight: bold;
   color: #ffffff;
+}
+
+/* Корзина в каталоге */
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.cart-item:last-child {
+  margin: 0;
+}
+
+.cart-item-remove {
+  min-width: 11px;
+  margin-right: 15px;
+}
+
+.cart-item-image {
+  margin-right: 12px;
+}
+
+.cart-item-image img {
+  border-radius: 50%;
+}
+
+.cart-item-name {
+  flex: 1;
+}
+
+.cart-item-weight {
+  min-width: 93px;
+  margin-right: 29px;
+}
+
+.dropdown-reversed {
+  right: 0;
+  left: auto;
+}
+
+.cart-list {
+  padding: 0px 0 20px;
+  color: #323232;
+  background-color: #f8f7f4;
+  min-width: 538px;
+}
+
+.result {
+  line-height: 1.2;
+  color: #323232;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.dropdown-action {
+  border-top: 1px solid #cacac7;
 }
 
 /* Каталог */
