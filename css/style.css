@@ -104,15 +104,13 @@ input[type="radio"].visually-hidden {
 .top-header-logo {
   margin: 0;
   padding: 0;
-  margin-right: 9px;
-  padding-top: 8px;
 }
 
 .top-navigation {
   display: flex;
   align-items: center;
   position: relative;
-  line-height: 30px;
+  top: -3px;
   color: #ffffff;
   width: 100%;
 }
@@ -122,36 +120,57 @@ input[type="radio"].visually-hidden {
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
-  list-style: none;
   margin-left: auto;
-  margin-right: 1px;
+  margin-right: 0;
   padding: 0;
-  /* min-height: 73px; */
-  /* align-items: center;
-  justify-content: center; */
-  /* align-self: center; */
 }
 
-.user-navigation > li {
+.user-navigation-link svg {
+  margin-right: 7px;
+}
+
+.user-navigation-link:hover svg g {
+  fill: #000000;
+}
+
+.user-navigation-item {
   margin-left: 10px;
 }
 
-.user-navigation a {
-  color: #ffffff;
-  text-decoration: none;
+.user-navigation-link {
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 25px;
+  padding: 7px 17px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.user-navigation-link:hover {
+  background-color: #f8f7f4;
+  color: #323232;
+}
+
+.navigation-search {
+  padding: 8px;
+  border-radius: 50%;
+}
+
+.navigation-search svg {
+  margin-right: 0;
 }
 
 .site-navigation {
   font-size: 16px;
   line-height: 18px;
   font-weight: bold;
-  list-style: none;
   display: flex;
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
-  /* min-height: 73px; */
-  margin-top: 3px;
 }
 
 .main-content {
@@ -185,10 +204,12 @@ input[type="radio"].visually-hidden {
   margin-right: 1px;
   font-weight: 700;
   font-size: 16px;
+  padding: 7px 14px;
   line-height: 18px;
-  padding: 7px 13px;
   background-color: transparent;
   border-radius: 25px;
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.2);
 }
 
 .navigation-link:active {
@@ -292,7 +313,7 @@ input[type="radio"].visually-hidden {
   font-size: 14px;
   font-weight: bold;
   text-align: right;
-  bottom: -60px;
+  bottom: -50px;
   right: 0;
 }
 
