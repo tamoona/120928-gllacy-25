@@ -93,6 +93,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   padding: 10px 0 0 0;
   box-sizing: border-box;
+  width: 100%;
 }
 
 .top-header-logo {
@@ -104,8 +105,11 @@ input[type="radio"].visually-hidden {
 
 .top-navigation {
   display: flex;
+  align-items: center;
+  position: relative;
   line-height: 30px;
   color: #ffffff;
+  width: 100%;
 }
 
 .user-navigation {
@@ -117,8 +121,10 @@ input[type="radio"].visually-hidden {
   margin-left: auto;
   margin-right: 1px;
   padding: 0;
-  min-height: 73px;
-  align-self: center;
+  /* min-height: 73px; */
+  /* align-items: center;
+  justify-content: center; */
+  /* align-self: center; */
 }
 
 .user-navigation > li {
@@ -136,11 +142,10 @@ input[type="radio"].visually-hidden {
   font-weight: bold;
   list-style: none;
   display: flex;
-  vertical-align: middle;
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
-  min-height: 73px;
+  /* min-height: 73px; */
   margin-top: 3px;
 }
 
@@ -200,11 +205,6 @@ input[type="radio"].visually-hidden {
 .site-navigation,
 .user-navigation {
   list-style: none;
-}
-
-.site-navigation {
-  width: 550px;
-  padding-top: 23px;
 }
 
 .navigation-link-active {
@@ -283,9 +283,12 @@ input[type="radio"].visually-hidden {
 }
 
 .header-contacts {
+  position: absolute;
   font-size: 14px;
   font-weight: bold;
   text-align: right;
+  bottom: -60px;
+  right: 0;
 }
 
 .phone-number {
