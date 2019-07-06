@@ -9,29 +9,29 @@
   </head>
   <body>
     <header class="top-header">
+      <a href="#" class="top-header-logo">
+        <img src="img/icons/logo.svg" alt="Логотип магазина мороженого Глэйси" />
+      </a>
       <nav class="top-navigation">
-        <a class="top-header-logo">
-          <img src="img/icons/logo.svg" alt="Логотип магазина мороженого Глэйси" />
-        </a>
         <ul class="site-navigation">
-          <li class="site-navigation-item">
-            <a class="navigation-link navigation-link-dropdown" href="catalog.html">Каталог</a>
+          <li class="site-navigation-item site-navigation-item-active">
+            <a class="navigation-link" href="catalog.html">Каталог</a>
             <!-- Выпадающий список -->
             <ul class="dropdown">
-              <li class="dropdown-item dropdown-item-highlighted">
-                <a href="#">Новинки</a>
+              <li class="dropdown-item">
+                <a href="#" class="dropdown-link">Новинки</a>
+              </li>
+              <li class="dropdown-item dropdown-item-active">
+                <a class="dropdown-link" href="catalog.html">Сливочное</a>
               </li>
               <li class="dropdown-item">
-                <a href="catalog.html">Сливочное</a>
+                <a href="#" class="dropdown-link">Щербеты</a>
               </li>
               <li class="dropdown-item">
-                <a href="#">Щербеты</a>
+                <a href="#" class="dropdown-link">Фруктовый лёд</a>
               </li>
               <li class="dropdown-item">
-                <a href="#">Фруктовый лёд</a>
-              </li>
-              <li class="dropdown-item">
-                <a href="#">Мелорин</a>
+                <a href="#" class="dropdown-link">Мелорин</a>
               </li>
             </ul>
           </li>
@@ -113,7 +113,7 @@
         </div>
       </nav>
     </header>
-    <main class="container">
+    <main class="catalog-main">
       <div class="breadcrumbs-wrapper">
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">

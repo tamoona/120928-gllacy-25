@@ -19,6 +19,18 @@ a {
   text-decoration: none;
 }
 
+a:visited {
+  color: #ffffff;
+}
+
+a[href^="tel:"] {
+  color: #ffffff;
+}
+
+a[href^="tel:"]:visited {
+  color: #ffffff;
+}
+
 .text-right {
   text-align: right;
 }
@@ -119,12 +131,17 @@ input[type="radio"].visually-hidden {
 }
 
 .site-navigation {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
+  list-style: none;
   display: flex;
+  vertical-align: middle;
   flex-wrap: wrap;
-  align-items: baseline;
-  position: relative;
-  padding-left: 0;
-  margin-left: 10px;
+  padding: 0;
+  margin: 0;
+  min-height: 73px;
+  margin-top: 3px;
 }
 
 .main-content {
@@ -137,13 +154,47 @@ input[type="radio"].visually-hidden {
 .site-navigation-item,
 .user-navigation-item {
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: top;
   position: relative;
 }
 
 .site-navigation-item:hover .dropdown,
 .user-navigation-item:hover .dropdown {
   display: block;
+}
+
+.site-navigation-item-active .navigation-link {
+  background-color: #d07058;
+  color: #ffffff;
+}
+
+.navigation-link {
+  margin: 0;
+  color: #323232;
+  display: block;
+  margin-right: 1px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  padding: 7px 13px;
+  background-color: transparent;
+  border-radius: 25px;
+}
+
+.navigation-link:active {
+  box-shadow: inset 0px 2px 1px 0 #696969;
+  background-color: #ededed;
+}
+
+.navigation-link:hover,
+.navigation-link:focus {
+  color: #323232;
+  background-color: #f7f6f3;
+}
+
+.navigation-link:active {
+  color: #323232;
+  background-color: #ededed;
 }
 
 .site-navigation,
@@ -156,66 +207,45 @@ input[type="radio"].visually-hidden {
   padding-top: 23px;
 }
 
-.navigation-link:visited,
-.user-navigation-link:visited {
-  color: #ffffff;
-}
-
-.navigation-link-dropdown:hover,
-.navigation-link-dropdown:focus {
-  color: #323232;
-  background-color: #f8f7f4;
-  border-radius: 21px;
-}
-
 .navigation-link-active {
   background-color: #d07058;
   border-radius: 21px;
-}
-
-.site-navigation-item > a {
-  display: block;
-  margin-right: 1px;
-  padding: 6px 13px 7px 14px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 18px;
-  background-color: transparent;
-  border-radius: 25px;
-}
-
-.site-navigation-item > a:hover,
-.site-navigation-item > a:focus {
-  color: #323232;
-  background-color: #f7f6f3;
-}
-
-.site-navigation-item > a:active {
-  color: #323232;
-  background-color: #ededed;
 }
 
 .dropdown {
   display: none;
   position: absolute;
   top: 36px;
-  left: -5px;
-  z-index: 10;
+  left: -7px;
+  z-index: 1;
+  text-align: left;
   list-style: none;
-  padding: 20px 15px;
   background-color: #f8f7f4;
   border-radius: 5px;
+  box-sizing: border-box;
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+  padding: 0;
+  overflow: hidden;
 }
 
-.dropdown a {
+.dropdown-link {
+  display: block;
   margin: 0;
-  padding: 0;
+  padding: 8px 21px;
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
   color: #323232;
   list-style: none;
+  white-space: nowrap;
+}
+
+.dropdown-link:visited {
+  color: #323232;
+}
+
+.dropdown-link:active {
+  background-color: #f6b5a5;
 }
 
 .dropdown-link:hover,
@@ -223,20 +253,27 @@ input[type="radio"].visually-hidden {
   background-color: #fbded7;
 }
 
-.dropdown-item:active {
-  background-color: #d07058;
-}
-
-.dropdown-item:active a {
-  color: #ffffff;
-}
-
-.dropdown-item-highlighted a {
-  padding-top: 11px;
-  padding-bottom: 11px;
+.site-navigation .dropdown-item:first-child .dropdown-link {
   font-size: 14px;
   line-height: 16px;
-  font-weight: 700;
+  font-weight: bold;
+  position: relative;
+  padding: 13px 21px;
+}
+
+.site-navigation .dropdown-item:first-child .dropdown-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 5px;
+  right: 5px;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item-active .dropdown-link {
+  background-color: #d07058;
+  color: #fff;
 }
 
 .slider-image-title {
@@ -513,12 +550,17 @@ input[type="radio"].visually-hidden {
   flex: 1;
 }
 
+.cart-item-name a {
+  color: #323232;
+}
+
 .cart-item-weight {
   min-width: 93px;
   margin-right: 29px;
 }
 
 .dropdown-reversed {
+  padding: 15px 20px;
   right: 0;
   left: auto;
 }
@@ -539,6 +581,11 @@ input[type="radio"].visually-hidden {
 
 .dropdown-action {
   border-top: 1px solid #cacac7;
+}
+
+/* Подчеркивание у ссылок */
+
+.container-shop {
 }
 
 /* Каталог */

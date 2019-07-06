@@ -9,16 +9,18 @@
   </head>
   <body>
     <header class="top-header">
+      <a href="#" class="top-header-logo">
+        <img src="img/icons/logo.svg" width="154" height="64" alt="Логотип магазина мороженого Глэйси" />
+      </a>
       <nav class="top-navigation">
-        <a class="top-header-logo">
-          <img src="img/icons/logo.svg" width="154" height="64" alt="Логотип магазина мороженого Глэйси" />
-        </a>
         <ul class="site-navigation">
           <li class="site-navigation-item">
-            <a class="navigation-link navigation-link-dropdown" href="catalog.html">Каталог</a>
+            <a class="navigation-link" href="catalog.html">
+              Каталог
+            </a>
             <!-- Выпадающий список -->
             <ul class="dropdown">
-              <li class="dropdown-item dropdown-item-highlighted">
+              <li class="dropdown-item">
                 <a class="dropdown-link" href="#">Новинки</a>
               </li>
               <li class="dropdown-item">
@@ -59,8 +61,8 @@
               <input placeholder="Электронная почта" />
               <input placeholder="Пароль" />
               <button class="button">Войти</button>
-              <a href="#">Забыли пароль?</a>
-              <a href="#">Новая регистрация</a>
+              <a class="user-nav-hover" href="#">Забыли пароль?</a>
+              <a class="user-nav-hover" href="#">Новая регистрация</a>
             </div>
           </li>
           <li class="user-navigation-item">
@@ -73,7 +75,9 @@
           <p class="schedule-phone">
             С 10 до 20, ежедневно
             <br />
-            <span class="phone-number">8 812 450-25-25</span>
+            <span class="phone-number">
+              <a href="tel:+78124502525">8 812 450-25-25</a>
+            </span>
           </p>
         </div>
       </nav>
@@ -178,7 +182,7 @@
           </li>
         </ul>
       </section>
-      <section class="container">
+      <section class="container-shop">
         <h1 class="visually-hidden">Магазин Глэйси</h1>
         <section class="features">
           <p class="features-title">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
