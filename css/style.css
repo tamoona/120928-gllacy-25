@@ -35,6 +35,11 @@ a[href^="tel:"]:visited {
   text-align: right;
 }
 
+.container {
+  max-width: 1146px;
+  margin: 0 auto;
+}
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -587,9 +592,6 @@ input[type="radio"].visually-hidden {
 }
 
 /* Подчеркивание у ссылок */
-
-.container-shop {
-}
 
 /* Каталог */
 
