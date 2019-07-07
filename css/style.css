@@ -625,6 +625,17 @@ input[type="radio"].visually-hidden {
   font-weight: 400;
 }
 
+.subscription-form {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.subscription-form .input {
+  margin: 0 10px 0 0;
+  flex: 1;
+}
+
 .map {
   position: relative;
   width: 100%;
