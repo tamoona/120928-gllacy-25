@@ -614,8 +614,9 @@ input[type="radio"].visually-hidden {
 .map {
   position: relative;
   width: 100%;
-  max-width: 1200px;
-  margin: auto;
+  background-image: url(../img/map.png);
+  background-size: cover;
+  min-height: 430px;
 }
 
 .telephone {
