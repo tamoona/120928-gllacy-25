@@ -125,14 +125,6 @@ input[type="radio"].visually-hidden {
   padding: 0;
 }
 
-.user-navigation-link svg {
-  margin-right: 7px;
-}
-
-.user-navigation-link:hover svg g {
-  fill: #000000;
-}
-
 .user-navigation-item {
   margin-left: 10px;
 }
@@ -149,9 +141,26 @@ input[type="radio"].visually-hidden {
   line-height: 16px;
 }
 
-.user-navigation-link:hover {
+.user-navigation-link svg {
+  margin-right: 7px;
+}
+
+.user-navigation-link:hover svg g {
+  fill: #000000;
+}
+
+.user-navigation-link:hover,
+.cart-not-empty .user-navigation-link {
   background-color: #f8f7f4;
   color: #323232;
+}
+
+.cart-not-empty svg g {
+  fill: #000000;
+}
+
+.cart-not-empty .cart-fill {
+  fill-opacity: 1;
 }
 
 .navigation-search {
