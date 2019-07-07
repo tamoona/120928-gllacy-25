@@ -451,15 +451,20 @@ input[type="radio"].visually-hidden {
   display: flex;
   margin: 0px;
   padding: 0px;
-  justify-content: space-between;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
+  align-items: stretch;
 }
 
 .promo-item {
-  height: 229px;
+  padding: 20px;
   border-radius: 15px;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-right: 25px;
+}
+
+.promo-item:last-child {
+  margin: 0;
 }
 
 .promo-item-raspberry {
@@ -472,18 +477,30 @@ input[type="radio"].visually-hidden {
   background-color: #3e0a23;
 }
 
-.promo h4 {
+.promo-item-title {
+  margin: 0;
+  padding: 0;
   font-size: 35px;
   font-weight: bold;
   text-align: left;
-  margin: 23px;
 }
 
-.promo p {
+.promo-item .button {
+  text-align: right;
+}
+
+.promo-item-text {
   font-size: 18px;
   font-weight: bold;
   text-align: left;
   color: #ffffff;
+  margin-top: 12px;
+  margin-bottom: 35px;
+  line-height: 1.22;
+}
+
+.promo-item .button-promo {
+  align-self: flex-end;
 }
 
 .features {
