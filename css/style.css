@@ -646,8 +646,6 @@ input[type="radio"].visually-hidden {
 
 .communication {
   display: flex;
-  margin: 0;
-  padding: 0;
   padding-top: 29px;
 }
 
