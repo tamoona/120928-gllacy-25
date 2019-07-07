@@ -544,10 +544,11 @@ input[type="radio"].visually-hidden {
   padding-top: 29px;
 }
 
+/* Футер */
+
 .communication {
   display: flex;
   margin: 0;
-  margin-right: 235px;
   padding: 0;
   padding-top: 29px;
 }
@@ -583,6 +584,7 @@ input[type="radio"].visually-hidden {
 }
 
 .social-media {
+  padding: 0;
   display: flex;
   justify-content: space-between;
   list-style: none;
@@ -593,21 +595,55 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-additional-information {
-  margin: 0;
-  padding: 0;
-  width: 306px;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.footer-additional-information a {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: normal;
 }
 
 .footer-navigation {
   list-style: none;
+  display: inline-block;
+  flex-direction: column;
 }
 
-.footer-navigation a {
-  display: flex;
-  text-decoration: underline;
-  font-size: 13px;
+.footer-navigation-highlited a {
   font-weight: bold;
-  color: #ffffff;
+}
+
+.footer-navigation-highlited {
+  position: relative;
+}
+
+.footer-navigation-item {
+  margin-bottom: 4px;
+}
+
+.heart-icon {
+  position: absolute;
+  top: 5px;
+  left: -22px;
+  width: 15px;
+  height: 13px;
+}
+
+.footer-copyright {
+  margin-left: auto;
+  min-width: 190px;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: normal;
+  color: #fefefe;
+}
+
+.footer-copyright p {
+  margin: 0;
+  padding: 0;
 }
 
 /* Корзина в каталоге */
