@@ -76,6 +76,7 @@ a[href^="tel:"].tel-inverted:visited {
 .container {
   max-width: 1146px;
   margin: 0 auto;
+  position: relative;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -653,7 +654,7 @@ input[type="radio"].visually-hidden {
 
 .form-contacts {
   position: absolute;
-  left: 870px;
+  right: 0;
   top: 63px;
   border-radius: 15px;
   background-color: #ffffff;
