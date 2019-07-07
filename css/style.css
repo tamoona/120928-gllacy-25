@@ -430,6 +430,8 @@ input[type="radio"].visually-hidden {
   border-radius: 15px;
   background-position: 140% 40%;
   background-repeat: no-repeat;
+  background-color: #ffffff;
+  overflow: hidden;
 }
 
 .blog-title {
