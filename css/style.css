@@ -11,6 +11,16 @@ body {
   background-color: #849d8f;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 img {
   max-width: 100%;
 }
@@ -47,13 +57,26 @@ a[href^="tel:"] {
   text-decoration-color: rgba(232, 77, 55, 0.3);
 }
 
+a[href^="tel:"].tel-inverted,
+a[href^="tel:"].tel-inverted:hover,
+a[href^="tel:"].tel-inverted:active,
+a[href^="tel:"].tel-inverted:visited {
+  color: #323232;
+  text-decoration: none;
+}
+
 .text-right {
   text-align: right;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .container {
   max-width: 1146px;
   margin: 0 auto;
+  position: relative;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -437,9 +460,22 @@ input[type="radio"].visually-hidden {
   font-size: 22px;
 }
 
-.promo {
-  list-style: none;
+.index-grid {
   display: flex;
+  margin-bottom: 40px;
+}
+
+.index-column {
+  padding: 20px;
+  margin-right: 25px;
+  width: 50%;
+}
+
+.index-column:last-child {
+  margin: 0;
+}
+
+.promo {
   margin: 0px;
   padding: 0px;
   margin-bottom: 35px;
@@ -447,11 +483,10 @@ input[type="radio"].visually-hidden {
 }
 
 .promo-item {
-  padding: 20px;
   border-radius: 15px;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-right: 25px;
+  min-height: 229px;
 }
 
 .promo-item:last-child {
@@ -476,22 +511,14 @@ input[type="radio"].visually-hidden {
   text-align: left;
 }
 
-.promo-item .button {
-  text-align: right;
-}
-
 .promo-item-text {
   font-size: 18px;
   font-weight: bold;
   text-align: left;
   color: #ffffff;
   margin-top: 12px;
-  margin-bottom: 35px;
-  line-height: 1.22;
-}
-
-.promo-item .button-promo {
-  align-self: flex-end;
+  margin-bottom: 46px;
+  line-height: 22px;
 }
 
 /* Преимущества */
@@ -532,7 +559,6 @@ input[type="radio"].visually-hidden {
 }
 
 .features-item-text {
-  font-family: "Roboto-Regular";
   color: #323232;
 }
 
@@ -546,23 +572,14 @@ input[type="radio"].visually-hidden {
   padding: 0;
 }
 
-.index-grid {
-  display: flex;
-  margin: 0px 0px 40px 0px;
-  padding: 0px;
-  justify-content: space-between;
-}
-
 .blog {
-  height: 220px;
-  margin: 0px;
-  padding: 0px 255px 0px 20px;
   background-image: url("../img/strawberry-background.png");
   border-radius: 15px;
-  background-position: 140% 40%;
+  background-position: -20px -200px;
   background-repeat: no-repeat;
   background-color: #ffffff;
   overflow: hidden;
+  min-height: 220px;
 }
 
 .blog-title {
@@ -570,67 +587,50 @@ input[type="radio"].visually-hidden {
   line-height: 22px;
   font-weight: 500;
   color: #323232;
-  margin: 0px 0px 5px 0px;
-  padding: 22px 0px 0px 0px;
+  margin: 0 0 10px 0;
+  padding: 0;
 }
 
 .blog-link {
   font-size: 24px;
   line-height: 30px;
   font-weight: bold;
-  margin: 0px;
-  padding: 0px;
+  padding: 0;
+  margin: 0;
+  max-width: 280px;
 }
 
 .subscribe {
-  position: relative;
-  z-index: 0;
-  display: inline-block;
-  width: 560px;
-  padding-top: 18px;
-  padding-right: 24px;
-  padding-left: 26px;
-  font-size: 16px;
-  line-height: 22px;
-  font-weight: 400;
-  color: #000000;
-  border-radius: 16px;
+  display: flex;
+  min-height: 220px;
+  background-image: url(../img/subscription-background-stripes.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  padding: 5px;
 }
 
-.subscribe::before,
-.subscribe::after {
-  content: "";
-  position: absolute;
-}
-
-.subscribe::before {
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
+.subscription-inner {
+  background-color: #fff;
+  padding: 33px 22px 38px 22px;
   border-radius: 15px;
 }
 
-.subscribe::after {
-  top: 5px;
-  right: 5px;
-  bottom: 5px;
-  left: 6px;
-  z-index: -1;
-  background-color: #f8f7f4;
-  border-radius: 9px;
-}
-
 .subscribe-text {
-  margin-bottom: 34px;
+  padding: 0;
+  margin: 0 0 34px 0;
+  color: #000000;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
 }
 
 .map {
   position: relative;
   width: 100%;
-  max-width: 1200px;
-  margin: auto;
+  background-image: url(../img/map.png);
+  background-size: cover;
+  min-height: 430px;
 }
 
 .telephone {
@@ -645,24 +645,38 @@ input[type="radio"].visually-hidden {
 
 .form-contacts {
   position: absolute;
-  text-align: center;
-  left: 870px;
+  right: 0;
   top: 63px;
-  display: inline-block;
   border-radius: 15px;
-  background-color: rgba(255, 255, 255, 0.98);
-  width: 302px;
+  background-color: #ffffff;
+  max-width: 302px;
+  min-height: 302px;
   margin: 0;
-  padding: 0;
-  padding-top: 29px;
+  padding: 32px 25px;
+}
+
+.form-contacts-text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #323232;
+  margin: 0 0 23px 0;
+}
+
+.form-contacts-text b {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.form-contacts .button {
+  width: 100%;
 }
 
 /* Футер */
 
 .communication {
   display: flex;
-  margin: 0;
-  padding: 0;
   padding-top: 29px;
 }
 
@@ -911,22 +925,10 @@ input[type="radio"].visually-hidden {
   flex-direction: column;
   position: relative;
   width: 25%;
-  padding: 6px 13px 35px 13px;
+  padding: 6px 13px 22px 13px;
   box-sizing: border-box;
   text-align: center;
   margin-top: -50px;
-}
-
-.button-preview {
-  align-self: center;
-  z-index: 2;
-  visibility: hidden;
-  padding: 10px 17px 11px;
-  font-size: 18px;
-  line-height: 24px;
-  color: #fefefe;
-  border-radius: 20px;
-  box-shadow: 0 1px 2px 0 #ac1000;
 }
 
 .catalog-item:hover {
@@ -963,7 +965,14 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-item-image {
-  margin-bottom: 7px;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.catalog-item-image svg {
+  position: absolute;
+  top: 2px;
+  left: 2px;
 }
 
 .catalog-item-image img {
@@ -975,8 +984,7 @@ input[type="radio"].visually-hidden {
   font-size: 16px;
   line-height: 22px;
   text-align: center;
-  margin-top: 16px;
-  margin-bottom: 17px;
+  margin: 0 0 11px 0;
 }
 
 .catalog-item-price {
@@ -996,6 +1004,18 @@ input[type="radio"].visually-hidden {
 
 .catalog-item-weight {
   font-size: 30px;
+}
+
+.button-preview {
+  align-self: center;
+  z-index: 2;
+  visibility: hidden;
+  padding: 10px 17px 11px;
+  font-size: 18px;
+  line-height: 24px;
+  color: #fefefe;
+  border-radius: 20px;
+  box-shadow: 0 1px 2px 0 #ac1000;
 }
 
 .catalog-filters {
