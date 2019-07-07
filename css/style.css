@@ -595,19 +595,28 @@ input[type="radio"].visually-hidden {
 }
 
 .subscribe {
-  position: relative;
-  z-index: 0;
-  font-size: 16px;
-  line-height: 22px;
-  font-weight: 400;
-  color: #000000;
-  border-radius: 16px;
-  background: #ffffff;
-  min-height: 200px;
+  display: flex;
+  min-height: 180px;
+  background-image: url(../img/subscription-background-stripes.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+.subscription-inner {
+  background-color: #fff;
+  padding: 33px 22px 38px 22px;
+  border-radius: 15px;
 }
 
 .subscribe-text {
-  margin-bottom: 34px;
+  padding: 0;
+  margin: 0 0 34px 0;
+  color: #000000;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
 }
 
 .map {
