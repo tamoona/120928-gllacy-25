@@ -486,30 +486,41 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
 }
 
+/* Преимущества */
+
 .features {
   border-radius: 15px;
   background-image: url("../img/wafer-background.png");
   margin-bottom: 40px;
   padding: 25px 22px 25px 20px;
   background-color: bisque;
+  line-height: 22px;
 }
 
 .features-list {
   display: flex;
-  justify-content: space-between;
   list-style: none;
-  position: relative;
-}
-
-.features-title,
-.features-list {
-  margin: 0;
+  flex-wrap: wrap;
+  margin-top: 5px;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  list-style: none;
+  margin: 0 -15px;
   padding: 0;
 }
 
 .feature-item {
-  font-family: "Roboto-Medium";
-  text-align: left;
+  box-sizing: border-box;
+  position: relative;
+  width: 50%;
+  display: flex;
+  padding: 0 15px;
+}
+
+.feature-item svg {
+  flex: 0 0 49px;
+  margin-right: 9px;
 }
 
 .features-item-text {
@@ -522,7 +533,9 @@ input[type="radio"].visually-hidden {
   font-weight: 500;
   line-height: 30px;
   word-spacing: 0.05em;
-  color: #323232;
+  color: #333333;
+  margin: 0 0 10px 0;
+  padding: 0;
 }
 
 .index-grid {
