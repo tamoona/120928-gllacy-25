@@ -923,6 +923,13 @@ input[type="radio"].visually-hidden {
 
 .catalog-item-image {
   margin-bottom: 16px;
+  position: relative;
+}
+
+.catalog-item-image svg {
+  position: absolute;
+  top: 2px;
+  left: 2px;
 }
 
 .catalog-item-image img {
