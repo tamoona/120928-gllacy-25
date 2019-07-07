@@ -446,9 +446,22 @@ input[type="radio"].visually-hidden {
   font-size: 22px;
 }
 
-.promo {
-  list-style: none;
+.index-grid {
   display: flex;
+  margin-bottom: 40px;
+}
+
+.index-column {
+  padding: 20px;
+  margin-right: 25px;
+  width: 50%;
+}
+
+.index-column:last-child {
+  margin: 0;
+}
+
+.promo {
   margin: 0px;
   padding: 0px;
   margin-bottom: 35px;
@@ -456,11 +469,10 @@ input[type="radio"].visually-hidden {
 }
 
 .promo-item {
-  padding: 20px;
   border-radius: 15px;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-right: 25px;
+  max-height: 288px;
 }
 
 .promo-item:last-child {
@@ -542,23 +554,14 @@ input[type="radio"].visually-hidden {
   color: #323232;
 }
 
-.index-grid {
-  display: flex;
-  margin: 0px 0px 40px 0px;
-  padding: 0px;
-  justify-content: space-between;
-}
-
 .blog {
-  height: 220px;
-  margin: 0px;
-  padding: 0px 255px 0px 20px;
   background-image: url("../img/strawberry-background.png");
   border-radius: 15px;
-  background-position: 140% 40%;
+  background-position: -20px -200px;
   background-repeat: no-repeat;
   background-color: #ffffff;
   overflow: hidden;
+  min-height: 180px;
 }
 
 .blog-title {
@@ -566,56 +569,29 @@ input[type="radio"].visually-hidden {
   line-height: 22px;
   font-weight: 500;
   color: #323232;
-  margin: 0px 0px 5px 0px;
-  padding: 22px 0px 0px 0px;
+  margin: 0 0 10px 0;
+  padding: 0;
 }
 
 .blog-link {
   font-size: 24px;
   line-height: 30px;
   font-weight: bold;
-  margin: 0px;
-  padding: 0px;
+  padding: 0;
+  margin: 0;
+  max-width: 280px;
 }
 
 .subscribe {
   position: relative;
   z-index: 0;
-  display: inline-block;
-  width: 560px;
-  padding-top: 18px;
-  padding-right: 24px;
-  padding-left: 26px;
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
   color: #000000;
   border-radius: 16px;
-}
-
-.subscribe::before,
-.subscribe::after {
-  content: "";
-  position: absolute;
-}
-
-.subscribe::before {
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-  border-radius: 15px;
-}
-
-.subscribe::after {
-  top: 5px;
-  right: 5px;
-  bottom: 5px;
-  left: 6px;
-  z-index: -1;
-  background-color: #f8f7f4;
-  border-radius: 9px;
+  background: #ffffff;
+  min-height: 200px;
 }
 
 .subscribe-text {
