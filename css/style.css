@@ -890,8 +890,6 @@ input[type="radio"].visually-hidden {
 .navigation-search {
   padding: 8px;
   border-radius: 50%;
-  width: 17px;
-  height: 17px;
 }
 
 .navigation-search svg {
