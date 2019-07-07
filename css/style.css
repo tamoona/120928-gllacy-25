@@ -882,22 +882,10 @@ input[type="radio"].visually-hidden {
   flex-direction: column;
   position: relative;
   width: 25%;
-  padding: 6px 13px 35px 13px;
+  padding: 6px 13px 22px 13px;
   box-sizing: border-box;
   text-align: center;
   margin-top: -50px;
-}
-
-.button-preview {
-  align-self: center;
-  z-index: 2;
-  visibility: hidden;
-  padding: 10px 17px 11px;
-  font-size: 18px;
-  line-height: 24px;
-  color: #fefefe;
-  border-radius: 20px;
-  box-shadow: 0 1px 2px 0 #ac1000;
 }
 
 .catalog-item:hover {
@@ -934,7 +922,7 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-item-image {
-  margin-bottom: 7px;
+  margin-bottom: 16px;
 }
 
 .catalog-item-image img {
@@ -946,8 +934,7 @@ input[type="radio"].visually-hidden {
   font-size: 16px;
   line-height: 22px;
   text-align: center;
-  margin-top: 16px;
-  margin-bottom: 17px;
+  margin: 0 0 11px 0;
 }
 
 .catalog-item-price {
@@ -967,6 +954,18 @@ input[type="radio"].visually-hidden {
 
 .catalog-item-weight {
   font-size: 30px;
+}
+
+.button-preview {
+  align-self: center;
+  z-index: 2;
+  visibility: hidden;
+  padding: 10px 17px 11px;
+  font-size: 18px;
+  line-height: 24px;
+  color: #fefefe;
+  border-radius: 20px;
+  box-shadow: 0 1px 2px 0 #ac1000;
 }
 
 .catalog-filters {
