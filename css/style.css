@@ -817,8 +817,6 @@ input[type="radio"].visually-hidden {
   border-top: 1px solid #cacac7;
 }
 
-/* Подчеркивание у ссылок */
-
 /* Каталог */
 
 .catalog {
@@ -971,4 +969,38 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+/* Хлебные крошки */
+
+.breadcrumbs {
+  padding: 0;
+  margin: 0;
+  margin-top: 12px;
+  list-style: none;
+}
+
+.breadcrumbs-item {
+  display: inline-block;
+}
+
+.breadcrumbs a {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: normal;
+}
+
+.breadcrumbs-current a {
+  text-decoration: none;
+}
+
+.breadcrumbs-current a:hover,
+.breadcrumbs-current a:active {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.breadcrumbs-item:not(:last-of-type)::after {
+  content: "»";
+  padding: 0 4px;
 }
