@@ -90,6 +90,12 @@ input[type="radio"].visually-hidden {
   background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
 }
 
+/* Модальное окно */
+
+.modal {
+  display: none;
+}
+
 /* Стили главной страницы */
 
 .top-header {
