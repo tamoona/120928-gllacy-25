@@ -526,10 +526,44 @@ input[type="radio"].visually-hidden {
   padding-top: 29px;
 }
 
+.social-button {
+  display: inline-block;
+}
+
+.social-button svg {
+  border: 3px solid #c2cec7;
+  border-radius: 50%;
+  color: #e6ebe9;
+}
+
+.social-button svg g {
+  fill: rgba(255, 255, 255, 0.8);
+}
+
+.social-button svg:hover {
+  border-color: rgba(255, 255, 255, 0.7);
+}
+
+.social-button svg:hover g {
+  fill: #ffffff;
+}
+
+.social-button svg:active {
+  border-color: #e9e9ee;
+}
+
+.social-button svg:active g {
+  fill: #e9e9ee;
+}
+
 .social-media {
   display: flex;
   justify-content: space-between;
   list-style: none;
+}
+
+.social-media-item {
+  margin-right: 14px;
 }
 
 .footer-additional-information {
