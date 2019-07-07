@@ -11,6 +11,16 @@ body {
   background-color: #849d8f;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 img {
   max-width: 100%;
 }
@@ -472,7 +482,7 @@ input[type="radio"].visually-hidden {
   border-radius: 15px;
   background-repeat: no-repeat;
   background-size: cover;
-  max-height: 288px;
+  min-height: 229px;
 }
 
 .promo-item:last-child {
@@ -497,22 +507,14 @@ input[type="radio"].visually-hidden {
   text-align: left;
 }
 
-.promo-item .button {
-  text-align: right;
-}
-
 .promo-item-text {
   font-size: 18px;
   font-weight: bold;
   text-align: left;
   color: #ffffff;
   margin-top: 12px;
-  margin-bottom: 35px;
-  line-height: 1.22;
-}
-
-.promo-item .button-promo {
-  align-self: flex-end;
+  margin-bottom: 46px;
+  line-height: 22px;
 }
 
 /* Преимущества */
@@ -573,7 +575,7 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
   background-color: #ffffff;
   overflow: hidden;
-  min-height: 180px;
+  min-height: 220px;
 }
 
 .blog-title {
@@ -596,7 +598,7 @@ input[type="radio"].visually-hidden {
 
 .subscribe {
   display: flex;
-  min-height: 180px;
+  min-height: 220px;
   background-image: url(../img/subscription-background-stripes.png);
   background-size: cover;
   background-repeat: no-repeat;
