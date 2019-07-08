@@ -56,7 +56,8 @@
             <div class="dropdown dropdown-reversed dropdown-search">
               <div class="dropdown-content">
                 <h2 class="visually-hidden">Поиск</h2>
-                <input type="text" class="input" placeholder="Что ищем?" />
+                <label class="visually-hidden" for="search">Поле поиска</label>
+                <input id="search" type="text" class="input" placeholder="Что ищем?" />
               </div>
             </div>
           </li>
@@ -72,8 +73,10 @@
             </a>
             <div class="dropdown dropdown-reversed dropdown-login">
               <div class="dropdown-content">
-                <input class="input" placeholder="Электронная почта" />
-                <input class="input" placeholder="Пароль" />
+                <label class="visually-hidden" for="login-email">Электронная почта</label>
+                <input id="login-email" class="input" placeholder="Электронная почта" />
+                <label class="visually-hidden" for="login-password">Пароль</label>
+                <input id="login-password" class="input" placeholder="Пароль" />
                 <div class="dropdown-email-action">
                   <button class="button">
                     Войти
@@ -158,7 +161,7 @@
         <h1 class="page-title">Сливочное мороженое</h1>
       </div>
       <section class="catalog-filters">
-        <h2 class="visually-hidden">Фильтры и сортировка </h2>
+        <h2 class="visually-hidden">Фильтры и сортировка</h2>
         <form class="filters" action="https://echo.htmlacademy.ru" method="get">
           <fieldset class="filter-set">
             <legend class="filter-title">Сортировка</legend>
@@ -177,8 +180,10 @@
                 <div class="scale">
                   <div class="bar"></div>
                 </div>
-                <input type="text" class="visually-hidden" name="price-min" value="100" />
-                <input type="text" class="visually-hidden" name="price-max" value="500" />
+                <label class="visually-hidden" for="price-min">Минимальная цена</label>
+                <input id="price-min" type="text" class="visually-hidden" name="price-min" value="100" />
+                <label class="visually-hidden" for="price-max">Максимальная цена</label>
+                <input id="price-max" type="text" class="visually-hidden" name="price-max" value="500" />
                 <div class="range-toggle range-toggle-min"></div>
                 <div class="range-toggle range-toggle-max"></div>
               </div>
