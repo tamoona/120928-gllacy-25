@@ -1186,7 +1186,7 @@ input[type="radio"].visually-hidden {
   display: inline-flex;
   justify-content: space-between;
   position: relative;
-  margin: 0;
+  margin: 5px 0 0 0;
   padding: 0;
   list-style: none;
   min-width: 200px;
