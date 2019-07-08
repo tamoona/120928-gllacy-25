@@ -352,17 +352,27 @@ input[type="radio"].visually-hidden {
 .dropdown {
   display: none;
   position: absolute;
-  top: 36px;
-  left: -7px;
+  padding-top: 5px;
   z-index: 1;
   text-align: left;
+}
+
+.dropdown-reversed {
+  right: 0;
+  left: auto;
+}
+
+.dropdown-content {
   list-style: none;
-  background-color: #f8f7f4;
-  border-radius: 5px;
+  padding: 0;
   box-sizing: border-box;
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
-  padding: 0;
-  overflow: hidden;
+  border-radius: 5px;
+  background-color: #f8f7f4;
+}
+
+.dropdown-reversed .dropdown-content {
+  padding: 20px 15px;
 }
 
 .dropdown-link {
@@ -867,12 +877,6 @@ input[type="radio"].visually-hidden {
   margin-right: 29px;
 }
 
-.dropdown-reversed {
-  padding: 20px 15px;
-  right: 0;
-  left: auto;
-}
-
 .cart-list {
   padding: 0px 0 20px;
   color: #323232;
@@ -956,12 +960,6 @@ input[type="radio"].visually-hidden {
 
 .dropdown-login .input {
   min-width: 241px;
-}
-
-.navigation-email {
-  margin-bottom: 20px;
-  outline: none;
-  outline-offset: none;
 }
 
 .dropdown-email-action {

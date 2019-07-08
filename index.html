@@ -24,23 +24,25 @@
                 Каталог
               </a>
               <!-- Выпадающий список -->
-              <ul class="dropdown">
-                <li class="dropdown-item">
-                  <a class="dropdown-link" href="#">Новинки</a>
-                </li>
-                <li class="dropdown-item">
-                  <a class="dropdown-link" href="catalog.html">Сливочное</a>
-                </li>
-                <li class="dropdown-item">
-                  <a class="dropdown-link" href="#">Щербеты</a>
-                </li>
-                <li class="dropdown-item">
-                  <a class="dropdown-link" href="#">Фруктовый лёд</a>
-                </li>
-                <li class="dropdown-item">
-                  <a class="dropdown-link" href="#">Мелорин</a>
-                </li>
-              </ul>
+              <div class="dropdown">
+                <ul class="dropdown-content">
+                  <li class="dropdown-item">
+                    <a class="dropdown-link" href="#">Новинки</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a class="dropdown-link" href="catalog.html">Сливочное</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a class="dropdown-link" href="#">Щербеты</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a class="dropdown-link" href="#">Фруктовый лёд</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a class="dropdown-link" href="#">Мелорин</a>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li class="site-navigation-item">
               <a class="navigation-link" href="#">Доставка и оплата</a>
@@ -59,8 +61,10 @@
                 </svg>
               </a>
               <div class="dropdown dropdown-reversed dropdown-search">
-                <h2 class="visually-hidden">Поиск</h2>
-                <input type="text" class="input" placeholder="Что ищем?" />
+                <div class="dropdown-content">
+                  <h2 class="visually-hidden">Поиск</h2>
+                  <input type="text" class="input" placeholder="Что ищем?" />
+                </div>
               </div>
             </li>
             <li class="user-navigation-item">
@@ -74,15 +78,17 @@
                 Вход
               </a>
               <div class="dropdown dropdown-reversed dropdown-login">
-                <input class="input" placeholder="Электронная почта" />
-                <input class="input" placeholder="Пароль" />
-                <div class="dropdown-email-action">
-                  <button class="button">
-                    Войти
-                  </button>
-                  <div class="dropdown-email-links">
-                    <a class="link-inverted" href="#">Забыли пароль?</a>
-                    <a class="link-inverted" href="#">Новая регистрация</a>
+                <div class="dropdown-content">
+                  <input class="input" placeholder="Электронная почта" />
+                  <input class="input" placeholder="Пароль" />
+                  <div class="dropdown-email-action">
+                    <button class="button">
+                      Войти
+                    </button>
+                    <div class="dropdown-email-links">
+                      <a class="link-inverted" href="#">Забыли пароль?</a>
+                      <a class="link-inverted" href="#">Новая регистрация</a>
+                    </div>
                   </div>
                 </div>
               </div>
