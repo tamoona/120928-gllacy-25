@@ -952,6 +952,83 @@ input[type="radio"].visually-hidden {
   border: solid 2px rgba(46, 136, 228, 0.52);
 }
 
+.filter-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.filter-item {
+  display: inline-block;
+}
+
+.filter-item label {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.checkbox:disabled + label {
+  opacity: 0.4;
+}
+
+.checkbox + label {
+  margin-left: 25px;
+  padding: 0 20px 0 10px;
+  opacity: 0.8;
+}
+
+.checkbox + label:hover {
+  opacity: 1;
+}
+
+.checkbox + label::before {
+  content: "";
+  position: absolute;
+  width: 27px;
+  height: 23px;
+  top: -2px;
+  left: -25px;
+  background-image: url(../img/icons/checkbox-off.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.checkbox:checked + label::before {
+  background-image: url(../img/icons/checkbox-on.svg);
+}
+
+.radio + label:hover {
+  opacity: 1;
+}
+
+.radio + label {
+  margin-left: 25px;
+  padding: 0 18px 0 10px;
+  opacity: 0.8;
+}
+
+.radio + label::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: -3px;
+  left: -27px;
+  background-image: url(../img/icons/radio-off.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.radio:checked + label::before {
+  background-image: url(../img/icons/radio-on.svg);
+}
+
+.radio:disabled + label {
+  opacity: 0.4;
+}
+
 /* Поиск */
 
 .dropdown-search .input {
@@ -1165,9 +1242,9 @@ input[type="radio"].visually-hidden {
 }
 
 .filters {
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-between; */
 }
 
 /* Хлебные крошки */
