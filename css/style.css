@@ -952,10 +952,18 @@ input[type="radio"].visually-hidden {
   border: solid 2px rgba(46, 136, 228, 0.52);
 }
 
-.filter-option-list {
+.filter-option-list,
+.filter-range {
   margin: 0;
   padding: 0;
   list-style: none;
+  border-radius: 20px;
+  padding: 9px 15px 10px 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.range-set {
+  min-width: 220px;
 }
 
 .filter-option {
@@ -1032,8 +1040,6 @@ input[type="radio"].visually-hidden {
 .plain-button {
   display: inline-block;
   padding: 7px 28px;
-  margin-left: 14px;
-  margin-top: 28px;
   min-width: 144px;
   font-size: 16px;
   line-height: 18px;
@@ -1066,7 +1072,7 @@ input[type="radio"].visually-hidden {
 
 .range-controls {
   position: relative;
-  margin: 15px 0;
+  margin: 7px 0;
 }
 
 .range-controls .scale {
@@ -1106,13 +1112,13 @@ input[type="radio"].visually-hidden {
 
 .select {
   position: relative;
-  border-radius: 15px;
+  border-radius: 20px;
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
   color: #ffffff;
   margin: 0;
-  padding: 7px 15px 7px 25px;
+  padding: 11px 15px 9px 25px;
   border: 0;
   outline: 0;
   -webkit-appearance: none;
@@ -1336,17 +1342,20 @@ input[type="radio"].visually-hidden {
   box-shadow: 0 1px 2px 0 #ac1000;
 }
 
-.catalog-filters {
+.filters {
   margin: 0;
   padding: 0;
   margin-bottom: 24px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .filter-set {
   border: none;
   padding: 0;
-  margin: 0;
-  margin-bottom: 16px;
+  margin: 0 16px 16px 0;
 }
 
 .filter-title {
@@ -1356,6 +1365,10 @@ input[type="radio"].visually-hidden {
   font-weight: 500;
   margin: 0 0 6px 17px;
   padding: 0 0 0 0;
+}
+
+.filter-submit-button {
+  margin-top: 5px;
 }
 
 /* Хлебные крошки */

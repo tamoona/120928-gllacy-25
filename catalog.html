@@ -159,7 +159,7 @@
       </div>
       <section class="catalog-filters">
         <form class="filters" action="https://echo.htmlacademy.ru" method="get">
-          <fieldset class="filter-set filter-sort">
+          <fieldset class="filter-set">
             <legend class="filter-title">Сортировка</legend>
             <select class="select" name="sort" id="sort">
               <option value="top">по популярности</option>
@@ -169,21 +169,21 @@
             </select>
             <i class="select-icon"></i>
           </fieldset>
-          <fieldset class="filter-set filter-price">
+          <fieldset class="filter-set range-set">
             <legend class="filter-title">Цена: <span class="min-price-value">100</span> руб. — <span class="max-price-value">500</span> руб.</legend>
             <div class="filter-range">
               <div class="range-controls">
                 <div class="scale">
                   <div class="bar"></div>
                 </div>
-                <input type="text" class="visually-hidden" name="price-min" value="100">
-                <input type="text" class="visually-hidden" name="price-max" value="500">
+                <input type="text" class="visually-hidden" name="price-min" value="100" />
+                <input type="text" class="visually-hidden" name="price-max" value="500" />
                 <div class="range-toggle range-toggle-min"></div>
                 <div class="range-toggle range-toggle-max"></div>
               </div>
             </div>
           </fieldset>
-          <fieldset class="filter-set filter-radio">
+          <fieldset class="filter-set">
             <legend class="filter-title">Жирность</legend>
             <ul class="filter-option-list">
               <li class="filter-option">
@@ -212,7 +212,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="filter-set filter-check">
+          <fieldset class="filter-set">
             <legend class="filter-title">Наполнители</legend>
             <div class="filter-option-list">
               <li class="filter-option">
@@ -247,9 +247,7 @@
               </li>
             </div>
           </fieldset>
-          <div class="filters-btn">
-            <button class="plain-button" type="submit">Применить</button>
-          </div>
+          <button class="plain-button filter-submit-button" type="submit">Применить</button>
         </form>
       </section>
       <section class="catalog">
