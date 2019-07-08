@@ -952,17 +952,17 @@ input[type="radio"].visually-hidden {
   border: solid 2px rgba(46, 136, 228, 0.52);
 }
 
-.filter-list {
+.filter-option-list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.filter-item {
+.filter-option {
   display: inline-block;
 }
 
-.filter-item label {
+.filter-option label {
   position: relative;
   display: inline-block;
   cursor: pointer;
@@ -1057,6 +1057,93 @@ input[type="radio"].visually-hidden {
   border: 0;
   background-color: #ffffff;
   color: #333333;
+}
+
+.range-input {
+  display: inline-block;
+  width: auto;
+}
+
+.range-controls {
+  position: relative;
+  margin: 15px 0;
+}
+
+.range-controls .scale {
+  height: 4px;
+  background: rgba(255, 255, 255, 0.5);
+  position: relative;
+}
+
+.range-controls .bar {
+  position: absolute;
+  left: 10%;
+  right: 20%;
+  height: 4px;
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -8px;
+  width: 4px;
+  height: 4px;
+  background: #849d8f;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+  box-sizing: content-box;
+}
+
+.range-toggle-min {
+  left: 10%;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.select {
+  position: relative;
+  border-radius: 15px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #ffffff;
+  margin: 0;
+  padding: 7px 15px 7px 25px;
+  border: 0;
+  outline: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  background-image: url(../img/icons/select-arrow-light.svg);
+  background-repeat: no-repeat;
+  background-position: 94% center;
+  min-width: 194px;
+}
+
+.select:hover {
+  color: #323232;
+  background-image: url(../img/icons/select-arrow-dark.svg);
+}
+
+.select:focus {
+  background-color: rgba(255, 255, 255, 1);
+  color: #323232;
+  background-image: url(../img/icons/select-arrow-dark.svg);
+}
+
+.select::-ms-expand {
+  display: none;
+}
+
+.select option {
+  color: #323232;
 }
 
 /* Поиск */
@@ -1255,14 +1342,14 @@ input[type="radio"].visually-hidden {
   margin-bottom: 24px;
 }
 
-.catalog-filters fieldset {
+.filter-set {
   border: none;
   padding: 0;
   margin: 0;
   margin-bottom: 16px;
 }
 
-.catalog-filters legend {
+.filter-title {
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;

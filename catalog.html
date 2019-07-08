@@ -103,7 +103,7 @@
                 <ul class="cart-list">
                   <li class="cart-item">
                     <div class="cart-item-remove">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"><path fill="#231F20" d="M10.979.728l-.708-.707L5.5 4.792.729.021.021.728 4.793 5.5.021 10.271l.707.708L5.5 6.207l4.771 4.772.708-.708L6.207 5.5z"/></svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"><path fill="#231F20" d="M10.979.728l-.708-.707L5.5 4.792.729.021.021.728 4.793 5.5.021 10.271l.707.708L5.5 6.207l4.771 4.772.708-.708L6.207 5.5z" /></svg>
                     </div>
                     <div class="cart-item-image">
                       <img width="33" height="33" src="img/ice-cream-with-orange-jam.jpg" alt="Пломбир с апельсиновым джемом" />
@@ -116,7 +116,7 @@
                   </li>
                   <li class="cart-item">
                     <div class="cart-item-remove">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"><path fill="#231F20" d="M10.979.728l-.708-.707L5.5 4.792.729.021.021.728 4.793 5.5.021 10.271l.707.708L5.5 6.207l4.771 4.772.708-.708L6.207 5.5z"/></svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"><path fill="#231F20" d="M10.979.728l-.708-.707L5.5 4.792.729.021.021.728 4.793 5.5.021 10.271l.707.708L5.5 6.207l4.771 4.772.708-.708L6.207 5.5z" /></svg>
                     </div>
                     <div class="cart-item-image">
                       <img width="33" height="33" src="img/strawberry-ice-cream-with-white-chocolate-powder.jpg" alt="Клубничный пломбир с присыпкой из белого шоколада" />
@@ -138,9 +138,9 @@
         </ul>
       </nav>
       <div class="header-contacts">
-          С 10 до 20, ежедневно
-          <a class="phone-number" href="tel:88124502525">8 812 450-25-25</a>
-        </div>
+        С 10 до 20, ежедневно
+        <a class="phone-number" href="tel:88124502525">8 812 450-25-25</a>
+      </div>
     </header>
     <main class="catalog-main container">
       <div class="breadcrumbs-wrapper">
@@ -159,51 +159,50 @@
       </div>
       <section class="catalog-filters">
         <form class="filters" action="https://echo.htmlacademy.ru" method="get">
-          <fieldset class="filters-item filter-sort">
-            <legend class="filters-title">Сортировка</legend>
-            <div class="filter-sort-field">
-              <select class="select" name="sort" id="sort">
-                <option value="top">по популярности</option>
-                <option value="low-price">сначала недорогие</option>
-                <option value="high-price">сначала дорогие</option>
-                <option value="fat">по жирности</option>
-              </select>
-              <i class="select-icon"></i>
-            </div>
+          <fieldset class="filter-set filter-sort">
+            <legend class="filter-title">Сортировка</legend>
+            <select class="select" name="sort" id="sort">
+              <option value="top">по популярности</option>
+              <option value="low-price">сначала недорогие</option>
+              <option value="high-price">сначала дорогие</option>
+              <option value="fat">по жирности</option>
+            </select>
+            <i class="select-icon"></i>
           </fieldset>
-          <fieldset class="filters-item filter-price">
-            <legend class="filters-title">Цена: 100 руб. — 500 руб.</legend>
-            <div class="filter-price-field">
-              <div class="filter-price-scale">
-                <div class="filter-price-range" style="margin-left: 20%; width: 51%">
-                  <div class="filter-price-toggle filter-price-toggle--min"></div>
-                  <div class="filter-price-toggle filter-price-toggle--max"></div>
+          <fieldset class="filter-set filter-price">
+            <legend class="filter-title">Цена: <span class="min-price-value">100</span> руб. — <span class="max-price-value">500</span> руб.</legend>
+            <div class="filter-range">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
                 </div>
+                <div class="range-toggle range-toggle-min"></div>
+                <div class="range-toggle range-toggle-max"></div>
               </div>
             </div>
           </fieldset>
-          <fieldset class="filters-item filter-radio">
-            <legend class="filters-title">Жирность</legend>
-            <ul class="filter-list">
-              <li class="filter-item">
+          <fieldset class="filter-set filter-radio">
+            <legend class="filter-title">Жирность</legend>
+            <ul class="filter-option-list">
+              <li class="filter-option">
                 <input class="visually-hidden radio" id="radio-1" type="radio" name="fat" value="0%" />
                 <label for="radio-1">
                   0%
                 </label>
               </li>
-              <li class="filter-item">
+              <li class="filter-option">
                 <input class="visually-hidden radio" id="radio-2" type="radio" name="fat" value="10%" checked />
                 <label for="radio-2">
                   до 10%
                 </label>
               </li>
-              <li class="filter-item">
+              <li class="filter-option">
                 <input class="visually-hidden radio" id="radio-3" type="radio" name="fat" value="30%" />
                 <label for="radio-3">
                   до 30%
                 </label>
               </li>
-              <li class="filter-item">
+              <li class="filter-option">
                 <input class="visually-hidden radio" id="radio-4" type="radio" name="fat" value="30%" />
                 <label for="radio-4">
                   выше 30%
@@ -211,34 +210,34 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="filters-item filter-check">
-            <legend class="filters-title">Наполнители</legend>
-            <div class="filter-list">
-              <li class="filter-item">
+          <fieldset class="filter-set filter-check">
+            <legend class="filter-title">Наполнители</legend>
+            <div class="filter-option-list">
+              <li class="filter-option">
                 <input class="visually-hidden checkbox" id="check-1" type="checkbox" name="topping" value="choco" />
                 <label for="check-1">
                   шоколадные
                 </label>
               </li>
-              <li class="filter-item">
+              <li class="filter-option">
                 <input class="visually-hidden checkbox" id="check-2" type="checkbox" name="topping" value="sugar" checked />
                 <label for="check-2">
                   сахарные присыпки
                 </label>
               </li>
-              <li class="filter-item">
+              <li class="filter-option">
                 <input class="visually-hidden checkbox" id="check-3" type="checkbox" name="topping" value="fruit" />
                 <label for="check-3">
                   фрукты
                 </label>
               </li>
-              <li class="filter-item">
+              <li class="filter-option">
                 <input class="visually-hidden checkbox" id="check-4" type="checkbox" name="topping" value="syrup" />
                 <label for="check-4">
                   сиропы
                 </label>
               </li>
-              <li class="filter-item">
+              <li class="filter-option">
                 <input class="visually-hidden checkbox" id="check-5" type="checkbox" name="topping" value="jam" />
                 <label class="checkbox-label" for="check-5">
                   джемы
