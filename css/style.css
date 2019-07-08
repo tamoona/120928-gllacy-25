@@ -1027,6 +1027,53 @@ input[type="radio"].visually-hidden {
   opacity: 0.4;
 }
 
+.range-input {
+  display: inline-block;
+  width: auto;
+}
+
+.range-controls {
+  position: relative;
+  margin: 15px 0;
+}
+
+.range-controls .scale {
+  height: 4px;
+  background: rgba(255, 255, 255, 0.5);
+  position: relative;
+}
+
+.range-controls .bar {
+  position: absolute;
+  left: 10%;
+  right: 20%;
+  height: 4px;
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+  width: 4px;
+  height: 4px;
+  background: #849d8f;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+  width: 4px;
+  height: 4px;
+  box-sizing: content-box;
+}
+
+.range-toggle-min {
+  left: 10%;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
 /* Поиск */
 
 .dropdown-search .input {
