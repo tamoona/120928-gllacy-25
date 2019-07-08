@@ -704,6 +704,16 @@ a[href^="tel:"].tel-inverted:visited {
   min-height: 430px;
 }
 
+.external-map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border: 0;
+  outline: 0;
+}
+
 .telephone {
   margin: 0px;
   margin-bottom: 25px;
