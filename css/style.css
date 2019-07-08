@@ -108,6 +108,7 @@ input[type="radio"].visually-hidden {
   text-decoration: none;
   border: 0;
   outline: none;
+  cursor: pointer;
 }
 
 .button:hover {
