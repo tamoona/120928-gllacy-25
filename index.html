@@ -285,9 +285,9 @@
           <section class="index-column subscribe">
             <div class="subscription-inner">
               <p class="subscribe-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-              <form action="echo.htmlacademy.ru" method="post">
+              <form action="echo.htmlacademy.ru" class="subscription-form" method="post">
                 <label class="visually-hidden" for="email">Ваша электронная почта:</label>
-                <input class="subscribe-form" type="email" id="email" placeholder="Электронная почта" />
+                <input class="input" type="email" id="email" placeholder="Электронная почта" />
                 <button class="button subscribe-button" type="submit">Отправить</button>
               </form>
             </div>
@@ -391,20 +391,27 @@
           </div>
         </div>
       </footer>
-      <div class="modal">
-        <form class="feedback" action="/contact" method="post">
-          <h3>Мы обязательно вам ответим!</h3>
-          <div class="form-row">
-            <input name="name" type="text" placeholder="Как вас зовут?" />
-          </div>
-          <div class="form-row">
-            <input name="email" type="email" placeholder="Ваша почта для ответа?" />
-          </div>
-          <div class="form-row">
-            <textarea name="comment" placeholder="Напишите что-нибудь..." rows="3"></textarea>
-          </div>
-          <input class="button" type="submit" value="Отправить" />
-        </form>
+      <div class="backdrop">
+        <div class="modal">
+          <svg class="modal-close" xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
+            <path fill="#231F20" d="M17.454 1.46L16.04.046 9 7.086 1.96.046.546 1.46l7.04 7.04-7.04 7.04 1.414 1.414L9 9.914l7.04 7.04 1.414-1.414-7.04-7.04z" />
+          </svg>
+          <form class="feedback" action="/contact" method="post">
+            <h3 class="modal-title">Мы обязательно вам ответим!</h3>
+            <div class="form-row">
+              <input class="input" name="name" type="text" placeholder="Как вас зовут?" />
+            </div>
+            <div class="form-row">
+              <input class="input" name="email" type="email" placeholder="Ваша почта для ответа?" />
+            </div>
+            <div class="form-row">
+              <textarea class="input" rows="9" cols="48" name="comment" placeholder="Напишите что-нибудь..." rows="3"></textarea>
+            </div>
+            <div class="text-right">
+              <input class="button" type="submit" value="Отправить" />
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </body>
