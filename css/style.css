@@ -30,12 +30,14 @@ a:visited,
 a[href^="tel:"]:visited {
   color: #ffffff;
   text-decoration: underline;
+  -webkit-text-decoration-color: rgba(255, 255, 255, 0.3);
   text-decoration-color: rgba(255, 255, 255, 0.3);
 }
 
 a:hover,
 a:active {
   color: #ffbc9e;
+  -webkit-text-decoration-color: rgba(255, 188, 158, 0.3);
   text-decoration-color: rgba(255, 188, 158, 0.3);
 }
 
@@ -47,6 +49,7 @@ a[href^="tel:"] {
 .link-inverted:visited {
   color: #323232;
   text-decoration: underline;
+  -webkit-text-decoration-color: rgba(0, 0, 0, 0.3);
   text-decoration-color: rgba(0, 0, 0, 0.3);
 }
 
@@ -54,6 +57,7 @@ a[href^="tel:"] {
 .link-inverted:active {
   color: #e84d37;
   text-decoration: underline;
+  -webkit-text-decoration-color: rgba(232, 77, 55, 0.3);
   text-decoration-color: rgba(232, 77, 55, 0.3);
 }
 
@@ -87,6 +91,7 @@ a[href^="tel:"].tel-inverted:visited {
   border: 0;
   padding: 0;
   white-space: nowrap;
+  -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
@@ -982,6 +987,9 @@ a[href^="tel:"].tel-inverted:visited {
   position: relative;
   display: inline-block;
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
 }
 
@@ -1339,6 +1347,7 @@ a[href^="tel:"].tel-inverted:visited {
 }
 
 .button-preview {
+  -ms-grid-row-align: center;
   align-self: center;
   z-index: 2;
   visibility: hidden;
@@ -1454,18 +1463,22 @@ a[href^="tel:"].tel-inverted:visited {
 }
 
 .arrow-left::after {
+  -webkit-transform: rotate(220deg);
   transform: rotate(220deg);
 }
 
 .arrow-left::before {
+  -webkit-transform: rotate(130deg);
   transform: rotate(130deg);
 }
 
 .arrow-right::after {
+  -webkit-transform: rotate(130deg);
   transform: rotate(130deg);
 }
 
 .arrow-right::before {
+  -webkit-transform: rotate(40deg);
   transform: rotate(40deg);
 }
 
