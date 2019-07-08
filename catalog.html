@@ -17,23 +17,25 @@
           <li class="site-navigation-item site-navigation-item-active">
             <a class="navigation-link" href="catalog.html">Каталог</a>
             <!-- Выпадающий список -->
-            <ul class="dropdown">
-              <li class="dropdown-item">
-                <a href="#" class="dropdown-link">Новинки</a>
-              </li>
-              <li class="dropdown-item dropdown-item-active">
-                <a class="dropdown-link" href="catalog.html">Сливочное</a>
-              </li>
-              <li class="dropdown-item">
-                <a href="#" class="dropdown-link">Щербеты</a>
-              </li>
-              <li class="dropdown-item">
-                <a href="#" class="dropdown-link">Фруктовый лёд</a>
-              </li>
-              <li class="dropdown-item">
-                <a href="#" class="dropdown-link">Мелорин</a>
-              </li>
-            </ul>
+            <div class="dropdown">
+              <ul class="dropdown-content">
+                <li class="dropdown-item">
+                  <a href="#" class="dropdown-link">Новинки</a>
+                </li>
+                <li class="dropdown-item dropdown-item-active">
+                  <a class="dropdown-link" href="catalog.html">Сливочное</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#" class="dropdown-link">Щербеты</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#" class="dropdown-link">Фруктовый лёд</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#" class="dropdown-link">Мелорин</a>
+                </li>
+              </ul>
+            </div>
           </li>
           <li class="site-navigation-item">
             <a class="navigation-link" href="#">Доставка и оплата</a>
@@ -52,8 +54,10 @@
               </svg>
             </a>
             <div class="dropdown dropdown-reversed dropdown-search">
-              <h2 class="visually-hidden">Поиск</h2>
-              <input type="text" class="input" placeholder="Что ищем?" />
+              <div class="dropdown-content">
+                <h2 class="visually-hidden">Поиск</h2>
+                <input type="text" class="input" placeholder="Что ищем?" />
+              </div>
             </div>
           </li>
           <li class="user-navigation-item">
@@ -67,15 +71,17 @@
               Вход
             </a>
             <div class="dropdown dropdown-reversed dropdown-login">
-              <input class="input" placeholder="Электронная почта" />
-              <input class="input" placeholder="Пароль" />
-              <div class="dropdown-email-action">
-                <button class="button">
-                  Войти
-                </button>
-                <div class="dropdown-email-links">
-                  <a class="link-inverted" href="#">Забыли пароль?</a>
-                  <a class="link-inverted" href="#">Новая регистрация</a>
+              <div class="dropdown-content">
+                <input class="input" placeholder="Электронная почта" />
+                <input class="input" placeholder="Пароль" />
+                <div class="dropdown-email-action">
+                  <button class="button">
+                    Войти
+                  </button>
+                  <div class="dropdown-email-links">
+                    <a class="link-inverted" href="#">Забыли пароль?</a>
+                    <a class="link-inverted" href="#">Новая регистрация</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -93,37 +99,39 @@
               2 товара
             </a>
             <div class="dropdown dropdown-reversed">
-              <ul class="cart-list">
-                <li class="cart-item">
-                  <div class="cart-item-remove">
-                    <img src="img/icons/cross-small.svg" alt="Иконка крестика" />
-                  </div>
-                  <div class="cart-item-image">
-                    <img src="img/ice-cream-with-orange-jam.jpg" alt="Пломбир с апельсиновым джемом" />
-                  </div>
-                  <div class="cart-item-name">
-                    <a href="#">Пломбир с апельсиновым джемом</a>
-                  </div>
-                  <div class="cart-item-weight">1,5 кг х 200 руб.</div>
-                  <div class="cart-item-cost">300 руб.</div>
-                </li>
-                <li class="cart-item">
-                  <div class="cart-item-remove">
-                    <img src="img/icons/cross-small.svg" alt="Иконка крестика" />
-                  </div>
-                  <div class="cart-item-image">
-                    <img src="img/strawberry-ice-cream-with-white-chocolate-powder.jpg" alt="Клубничный пломбир с присыпкой из белого шоколада" />
-                  </div>
-                  <div class="cart-item-name">
-                    <a href="#">Клубничный пломбир с присыпкой из белого шоколада</a>
-                  </div>
-                  <div class="cart-item-weight">1,5 кг х 300 руб.</div>
-                  <div class="cart-item-cost">450 руб.</div>
-                </li>
-              </ul>
-              <div class="text-right dropdown-action">
-                <p class="result">Итого: 750 руб.</p>
-                <button class="button ">Оформить заказ</button>
+              <div class="dropdown-content">
+                <ul class="cart-list">
+                  <li class="cart-item">
+                    <div class="cart-item-remove">
+                      <img src="img/icons/cross-small.svg" alt="Иконка крестика" />
+                    </div>
+                    <div class="cart-item-image">
+                      <img src="img/ice-cream-with-orange-jam.jpg" alt="Пломбир с апельсиновым джемом" />
+                    </div>
+                    <div class="cart-item-name">
+                      <a href="#">Пломбир с апельсиновым джемом</a>
+                    </div>
+                    <div class="cart-item-weight">1,5 кг х 200 руб.</div>
+                    <div class="cart-item-cost">300 руб.</div>
+                  </li>
+                  <li class="cart-item">
+                    <div class="cart-item-remove">
+                      <img src="img/icons/cross-small.svg" alt="Иконка крестика" />
+                    </div>
+                    <div class="cart-item-image">
+                      <img src="img/strawberry-ice-cream-with-white-chocolate-powder.jpg" alt="Клубничный пломбир с присыпкой из белого шоколада" />
+                    </div>
+                    <div class="cart-item-name">
+                      <a href="#">Клубничный пломбир с присыпкой из белого шоколада</a>
+                    </div>
+                    <div class="cart-item-weight">1,5 кг х 300 руб.</div>
+                    <div class="cart-item-cost">450 руб.</div>
+                  </li>
+                </ul>
+                <div class="text-right dropdown-action">
+                  <p class="result">Итого: 750 руб.</p>
+                  <button class="button ">Оформить заказ</button>
+                </div>
               </div>
             </div>
           </li>
