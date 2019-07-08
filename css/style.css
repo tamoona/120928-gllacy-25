@@ -103,6 +103,7 @@ input[type="radio"].visually-hidden {
   text-align: center;
   color: #ffffff;
   box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
+  background-color: #e74a35;
   background-image: linear-gradient(to top, #e74a35, #f26843);
   border-radius: 50px;
   text-decoration: none;
@@ -264,7 +265,7 @@ input[type="radio"].visually-hidden {
   margin-right: 7px;
 }
 
-.user-navigation-link:hover svg g {
+.user-navigation-link:hover g {
   fill: #000000;
 }
 
@@ -274,7 +275,7 @@ input[type="radio"].visually-hidden {
   color: #323232;
 }
 
-.cart-not-empty svg g {
+.cart-not-empty g {
   fill: #000000;
 }
 
@@ -405,7 +406,7 @@ input[type="radio"].visually-hidden {
   background-color: #fbded7;
 }
 
-.site-navigation .dropdown-item:first-child .dropdown-link {
+.dropdown-item-featured .dropdown-link {
   font-size: 14px;
   line-height: 16px;
   font-weight: bold;
@@ -413,7 +414,7 @@ input[type="radio"].visually-hidden {
   padding: 13px 21px;
 }
 
-.site-navigation .dropdown-item:first-child .dropdown-link::after {
+.dropdown-item-featured .dropdown-link::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -660,6 +661,7 @@ input[type="radio"].visually-hidden {
 .subscribe {
   display: flex;
   min-height: 220px;
+  background-color: #ffffff;
   background-image: url(../img/subscription-background-stripes.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -697,6 +699,7 @@ input[type="radio"].visually-hidden {
   position: relative;
   width: 100%;
   background-image: url(../img/map.png);
+  background-color: #ffffff;
   background-size: cover;
   min-height: 430px;
 }
@@ -758,23 +761,23 @@ input[type="radio"].visually-hidden {
   color: #e6ebe9;
 }
 
-.social-button svg g {
+.social-button g {
   fill: rgba(255, 255, 255, 0.8);
 }
 
-.social-button svg:hover {
+.social-icon:hover {
   border-color: rgba(255, 255, 255, 0.7);
 }
 
-.social-button svg:hover g {
+.social-icon:hover g {
   fill: #ffffff;
 }
 
-.social-button svg:active {
+.social-icon:active {
   border-color: #e9e9ee;
 }
 
-.social-button svg:active g {
+.social-icon:active g {
   fill: #e9e9ee;
 }
 
@@ -1072,8 +1075,20 @@ input[type="radio"].visually-hidden {
 
 /* Каталог */
 
+.catalog-main {
+  padding-top: 18px;
+}
+
 .catalog {
-  margin-bottom: 42px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 42px;
+}
+
+.page-title {
+  font-size: 35px;
+  font-weight: bold;
+  line-height: 41px;
+  margin: 0 0 30px 0;
 }
 
 .catalog-popular {
@@ -1234,8 +1249,7 @@ input[type="radio"].visually-hidden {
 
 .breadcrumbs {
   padding: 0;
-  margin: 0;
-  margin-top: 12px;
+  margin: 0 0 5px 0;
   list-style: none;
 }
 
@@ -1262,4 +1276,100 @@ input[type="radio"].visually-hidden {
 .breadcrumbs-item:not(:last-of-type)::after {
   content: "»";
   padding: 0 4px;
+}
+
+/* Пагинатор */
+
+.pagination-list {
+  display: inline-flex;
+  justify-content: space-between;
+  position: relative;
+  margin: 5px 0 0 0;
+  padding: 0;
+  list-style: none;
+  min-width: 200px;
+}
+
+.arrow {
+  position: relative;
+  width: 25px;
+  height: 25px;
+}
+
+.arrow::before,
+.arrow::after {
+  content: "";
+  position: absolute;
+  background-color: #ffffff;
+  left: 9px;
+  width: 6px;
+  height: 1px;
+}
+
+.arrow::before {
+  top: 10px;
+}
+
+.arrow::after {
+  top: 14px;
+}
+
+.arrow-disabled::before,
+.arrow-disabled::after {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.arrow-left::after {
+  transform: rotate(220deg);
+}
+
+.arrow-left::before {
+  transform: rotate(130deg);
+}
+
+.arrow-right::after {
+  transform: rotate(130deg);
+}
+
+.arrow-right::before {
+  transform: rotate(40deg);
+}
+
+.pagination-item {
+  position: relative;
+  text-align: center;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+.pagination-item a {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.pagination-item:hover,
+.pagination-item:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.pagination-item:active {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+.pagination-item-current,
+.pagination-item-current:hover,
+.pagination-item-current:active {
+  background-color: #ffffff;
+}
+
+.pagination-item-current a {
+  text-decoration: none;
+  color: #333333;
 }
