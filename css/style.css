@@ -995,9 +995,20 @@ input[type="radio"].visually-hidden {
 
 /* Каталог */
 
+.catalog-main {
+  padding-top: 18px;
+}
+
 .catalog {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   padding-bottom: 42px;
+}
+
+.page-title {
+  font-size: 35px;
+  font-weight: bold;
+  line-height: 41px;
+  margin: 0 0 30px 0;
 }
 
 .catalog-popular {
@@ -1158,8 +1169,7 @@ input[type="radio"].visually-hidden {
 
 .breadcrumbs {
   padding: 0;
-  margin: 0;
-  margin-top: 12px;
+  margin: 0 0 5px 0;
   list-style: none;
 }
 
