@@ -886,6 +886,42 @@ input[type="radio"].visually-hidden {
   margin-right: 0;
 }
 
+/* Вход */
+
+.dropdown-login .input {
+  min-width: 241px;
+}
+
+.navigation-email {
+  margin-bottom: 20px;
+  outline: none;
+  outline-offset: none;
+}
+
+.dropdown-email-action {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.dropdown-email-action .button {
+  min-width: 100px;
+}
+
+.dropdown-email-links {
+  padding-left: 10px;
+  flex: 1;
+}
+
+.dropdown-email-links .link-inverted {
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.dropdown-email-links a {
+  display: block;
+}
+
 /* Каталог */
 
 .catalog {
