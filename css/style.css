@@ -508,14 +508,16 @@ input[type="radio"].visually-hidden {
   font-size: 14px;
   font-weight: bold;
   text-align: right;
-  bottom: -50px;
+  line-height: 24px;
+  bottom: -40px;
   right: 0;
 }
 
 .phone-number {
   text-decoration: none;
-  display: inline-block;
+  display: block;
   font-size: 22px;
+  line-height: 24px;
 }
 
 .index-grid {
@@ -917,7 +919,7 @@ input[type="radio"].visually-hidden {
   outline-offset: 0;
   font-size: 16px;
   font-weight: bold;
-  line-height: 16px;
+  line-height: 18px;
   background-color: #ffffff;
 }
 
