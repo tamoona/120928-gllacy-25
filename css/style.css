@@ -1074,6 +1074,48 @@ input[type="radio"].visually-hidden {
   left: 80%;
 }
 
+.select {
+  position: relative;
+  border-radius: 15px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #ffffff;
+  margin: 0;
+  padding: 7px 15px 7px 25px;
+  border: 0;
+  outline: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  background-image: url(../img/icons/select-arrow-light.svg);
+  background-repeat: no-repeat;
+  background-position: 94% center;
+  min-width: 194px;
+}
+
+.select:hover {
+  color: #323232;
+  background-image: url(../img/icons/select-arrow-dark.svg);
+}
+
+.select:focus {
+  background-color: rgba(255, 255, 255, 1);
+  color: #323232;
+  background-image: url(../img/icons/select-arrow-dark.svg);
+}
+
+.select::-ms-expand {
+  display: none;
+}
+
+.select option {
+  color: #323232;
+}
+
 /* Поиск */
 
 .dropdown-search .input {
