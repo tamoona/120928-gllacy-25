@@ -264,7 +264,7 @@ input[type="radio"].visually-hidden {
   margin-right: 7px;
 }
 
-.user-navigation-link:hover svg g {
+.user-navigation-link:hover g {
   fill: #000000;
 }
 
@@ -274,7 +274,7 @@ input[type="radio"].visually-hidden {
   color: #323232;
 }
 
-.cart-not-empty svg g {
+.cart-not-empty g {
   fill: #000000;
 }
 
@@ -405,7 +405,7 @@ input[type="radio"].visually-hidden {
   background-color: #fbded7;
 }
 
-.site-navigation .dropdown-item:first-child .dropdown-link {
+.dropdown-item-featured .dropdown-link {
   font-size: 14px;
   line-height: 16px;
   font-weight: bold;
@@ -413,7 +413,7 @@ input[type="radio"].visually-hidden {
   padding: 13px 21px;
 }
 
-.site-navigation .dropdown-item:first-child .dropdown-link::after {
+.dropdown-item-featured .dropdown-link::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -758,23 +758,23 @@ input[type="radio"].visually-hidden {
   color: #e6ebe9;
 }
 
-.social-button svg g {
+.social-button g {
   fill: rgba(255, 255, 255, 0.8);
 }
 
-.social-button svg:hover {
+.social-icon:hover {
   border-color: rgba(255, 255, 255, 0.7);
 }
 
-.social-button svg:hover g {
+.social-icon:hover g {
   fill: #ffffff;
 }
 
-.social-button svg:active {
+.social-icon:active {
   border-color: #e9e9ee;
 }
 
-.social-button svg:active g {
+.social-icon:active g {
   fill: #e9e9ee;
 }
 
