@@ -189,6 +189,16 @@ a[href^="tel:"].tel-inverted:visited {
 }
 
 /* Модальное окно */
+@keyframes zoom-out {
+  from {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
 
 .backdrop {
   position: fixed;
@@ -196,7 +206,7 @@ a[href^="tel:"].tel-inverted:visited {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.4);
   z-index: 8;
   display: none;
   justify-content: center;
@@ -215,6 +225,11 @@ a[href^="tel:"].tel-inverted:visited {
   max-width: 478px;
   z-index: 10;
   position: relative;
+}
+
+.backdrop.open .modal {
+  animation: zoom-out 0.5s;
+  animation-fill-mode: both;
 }
 
 .modal-close {
