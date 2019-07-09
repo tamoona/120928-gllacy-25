@@ -66,7 +66,7 @@
                   <form action="https://echo.htmlacademy.ru" method="get">
                     <label class="visually-hidden" for="search">Поле поиска</label>
                     <input name="search" id="search" type="text" class="input" placeholder="Что ищем?" />
-                    <input type="submit" class="visually-hidden"/>
+                    <input type="submit" class="visually-hidden" />
                   </form>
                 </div>
               </div>
@@ -83,19 +83,21 @@
               </a>
               <div class="dropdown dropdown-reversed dropdown-login">
                 <div class="dropdown-content">
-                  <label class="visually-hidden" for="login-email">Электронная почта</label>
-                  <input id="login-email" class="input" placeholder="Электронная почта" />
-                  <label class="visually-hidden" for="login-password">Пароль</label>
-                  <input id="login-password" class="input" placeholder="Пароль" />
-                  <div class="dropdown-email-action">
-                    <button class="button">
-                      Войти
-                    </button>
-                    <div class="dropdown-email-links">
-                      <a class="link-inverted" href="#">Забыли пароль?</a>
-                      <a class="link-inverted" href="#">Новая регистрация</a>
+                  <form action="https://echo.htmlacademy.ru" method="post">
+                    <label class="visually-hidden" for="login-email">Электронная почта</label>
+                    <input name="email" type="email" id="login-email" class="input" placeholder="Электронная почта" />
+                    <label class="visually-hidden" for="login-password">Пароль</label>
+                    <input name="password" id="login-password" class="input" placeholder="Пароль" />
+                    <div class="dropdown-email-action">
+                      <button class="button">
+                        Войти
+                      </button>
+                      <div class="dropdown-email-links">
+                        <a class="link-inverted" href="#">Забыли пароль?</a>
+                        <a class="link-inverted" href="#">Новая регистрация</a>
+                      </div>
                     </div>
-                  </div>
+                  </form>
                 </div>
               </div>
             </li>
