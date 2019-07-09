@@ -746,7 +746,7 @@ a[href^="tel:"].tel-inverted:visited {
 .subscribe-text {
   padding: 0;
   margin: 0 0 36px 0;
-  color: #000000;
+  color: #5a5a5a;
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
@@ -947,8 +947,12 @@ a[href^="tel:"].tel-inverted:visited {
 
 .cart-item {
   display: flex;
+  color: #323232;
   align-items: center;
   margin-bottom: 25px;
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: normal;
 }
 
 .cart-item:last-child {
@@ -971,6 +975,7 @@ a[href^="tel:"].tel-inverted:visited {
 
 .cart-item-name {
   flex: 1;
+  text-align: left;
 }
 
 .cart-item-name a,
@@ -986,9 +991,12 @@ a[href^="tel:"].tel-inverted:visited {
   margin-right: 29px;
 }
 
+.cart-item-weight-price {
+  color: #999999;
+}
+
 .cart-list {
   padding: 0px 0 20px;
-  color: #323232;
   background-color: #f8f7f4;
   min-width: 538px;
 }
@@ -1022,18 +1030,22 @@ a[href^="tel:"].tel-inverted:visited {
 
 .input::-webkit-input-placeholder {
   font-weight: normal;
+  color: #999999;
 }
 
 .input:-ms-input-placeholder {
   font-weight: normal;
+  color: #999999;
 }
 
 .input::-ms-input-placeholder {
   font-weight: normal;
+  color: #999999;
 }
 
 .input::placeholder {
   font-weight: normal;
+  color: #999999;
 }
 
 .input:hover,
@@ -1590,6 +1602,7 @@ a[href^="tel:"].tel-inverted:visited {
   line-height: 18px;
   font-weight: 500;
   color: #ffffff;
+  text-decoration: none;
 }
 
 .pagination-item:hover,
