@@ -56,8 +56,11 @@
             <div class="dropdown dropdown-reversed dropdown-search">
               <div class="dropdown-content">
                 <h2 class="visually-hidden">Поиск</h2>
-                <label class="visually-hidden" for="search">Поле поиска</label>
-                <input id="search" type="text" class="input" placeholder="Что ищем?" />
+                <form action="https://echo.htmlacademy.ru" method="get">
+                  <label class="visually-hidden" for="search">Поле поиска</label>
+                  <input name="search" id="search" type="text" class="input" placeholder="Что ищем?" />
+                  <input type="submit" class="visually-hidden" />
+                </form>
               </div>
             </div>
           </li>
@@ -73,19 +76,21 @@
             </a>
             <div class="dropdown dropdown-reversed dropdown-login">
               <div class="dropdown-content">
-                <label class="visually-hidden" for="login-email">Электронная почта</label>
-                <input id="login-email" class="input" placeholder="Электронная почта" />
-                <label class="visually-hidden" for="login-password">Пароль</label>
-                <input id="login-password" class="input" placeholder="Пароль" />
-                <div class="dropdown-email-action">
-                  <button class="button">
-                    Войти
-                  </button>
-                  <div class="dropdown-email-links">
-                    <a class="link-inverted" href="#">Забыли пароль?</a>
-                    <a class="link-inverted" href="#">Новая регистрация</a>
+                <form action="https://echo.htmlacademy.ru" method="post">
+                  <label class="visually-hidden" for="login-email">Электронная почта</label>
+                  <input name="email" type="email" id="login-email" class="input" placeholder="Электронная почта" />
+                  <label class="visually-hidden" for="login-password">Пароль</label>
+                  <input name="password" id="login-password" class="input" placeholder="Пароль" />
+                  <div class="dropdown-email-action">
+                    <button class="button">
+                      Войти
+                    </button>
+                    <div class="dropdown-email-links">
+                      <a class="link-inverted" href="#">Забыли пароль?</a>
+                      <a class="link-inverted" href="#">Новая регистрация</a>
+                    </div>
                   </div>
-                </div>
+                </form>
               </div>
             </div>
           </li>
@@ -105,9 +110,9 @@
               <div class="dropdown-content">
                 <ul class="cart-list">
                   <li class="cart-item">
-                    <div class="cart-item-remove">
+                    <button class="cart-item-remove">
                       <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"><path fill="#231F20" d="M10.979.728l-.708-.707L5.5 4.792.729.021.021.728 4.793 5.5.021 10.271l.707.708L5.5 6.207l4.771 4.772.708-.708L6.207 5.5z" /></svg>
-                    </div>
+                    </button>
                     <div class="cart-item-image">
                       <img width="33" height="33" src="img/ice-cream-with-orange-jam.jpg" alt="Пломбир с апельсиновым джемом" />
                     </div>
@@ -118,9 +123,9 @@
                     <div class="cart-item-cost">300 руб.</div>
                   </li>
                   <li class="cart-item">
-                    <div class="cart-item-remove">
+                    <button class="cart-item-remove">
                       <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"><path fill="#231F20" d="M10.979.728l-.708-.707L5.5 4.792.729.021.021.728 4.793 5.5.021 10.271l.707.708L5.5 6.207l4.771 4.772.708-.708L6.207 5.5z" /></svg>
-                    </div>
+                    </button>
                     <div class="cart-item-image">
                       <img width="33" height="33" src="img/strawberry-ice-cream-with-white-chocolate-powder.jpg" alt="Клубничный пломбир с присыпкой из белого шоколада" />
                     </div>
