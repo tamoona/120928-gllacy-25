@@ -9,6 +9,14 @@ window.onload = function() {
     document.querySelector(".backdrop").classList.remove("open");
   }
 
-  document.querySelector(".button-contact-us").addEventListener("click", showModal);
-  document.querySelector(".modal-close").addEventListener("click", closeModal);
+  var button = document.querySelector(".button-contact-us");
+  var closeButton = document.querySelector(".modal-close");
+
+  if (button) {
+    button.addEventListener("click", showModal);
+  }
+
+  if (closeButton) {
+    closeButton.addEventListener("click", closeModal);
+  }
 };
