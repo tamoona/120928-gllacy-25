@@ -63,8 +63,11 @@
               <div class="dropdown dropdown-reversed dropdown-search">
                 <div class="dropdown-content">
                   <h2 class="visually-hidden">Поиск</h2>
+                  <form action="https://echo.htmlacademy.ru" method="get">
                   <label class="visually-hidden" for="search">Поле поиска</label>
-                  <input id="search" type="text" class="input" placeholder="Что ищем?" />
+                    <input name="search" id="search" type="text" class="input" placeholder="Что ищем?" />
+                    <input type="submit" class="visually-hidden"/>
+                  </form>
                 </div>
               </div>
             </li>
