@@ -109,41 +109,43 @@
             <div class="dropdown dropdown-reversed">
               <div class="dropdown-content">
                 <form action="https://echo.htmlacademy.ru" method="post">
-                <ul class="cart-list">
-                  <li class="cart-item">
-                    <button class="cart-item-remove">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"><path fill="#231F20" d="M10.979.728l-.708-.707L5.5 4.792.729.021.021.728 4.793 5.5.021 10.271l.707.708L5.5 6.207l4.771 4.772.708-.708L6.207 5.5z" /></svg>
-                    </button>
-                    <div class="cart-item-image">
-                      <img width="33" height="33" src="img/ice-cream-with-orange-jam.jpg" alt="Пломбир с апельсиновым джемом" />
-                    </div>
-                    <div class="cart-item-name">
-                      <a href="#">Пломбир с апельсиновым джемом</a>
-                    </div>
-                    <div class="cart-item-weight">1,5 кг х 200 руб.</div>
-                    <div class="cart-item-cost">300 руб.</div>
-                    <input type="hidden" name="id" value="1" />
-                  </li>
-                  <li class="cart-item">
-                    <button class="cart-item-remove">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"><path fill="#231F20" d="M10.979.728l-.708-.707L5.5 4.792.729.021.021.728 4.793 5.5.021 10.271l.707.708L5.5 6.207l4.771 4.772.708-.708L6.207 5.5z" /></svg>
-                    </button>
-                    <div class="cart-item-image">
-                      <img width="33" height="33" src="img/strawberry-ice-cream-with-white-chocolate-powder.jpg" alt="Клубничный пломбир с присыпкой из белого шоколада" />
-                    </div>
-                    <div class="cart-item-name">
-                      <a href="#">Клубничный пломбир с присыпкой из белого шоколада</a>
-                    </div>
-                    <div class="cart-item-weight">1,5 кг х 300 руб.</div>
-                    <div class="cart-item-cost">450 руб.</div>
-                    <input type="hidden" name="id" value="2" />
-                  </li>
-                </ul>
-                <div class="text-right dropdown-action">
-                  <p class="result">Итого: 750 руб.</p>
-                  <button class="button" type="submit">Оформить заказ</button>
-                </div>
-              </form>
+                  <ul class="cart-list">
+                    <li class="cart-item">
+                      <button type="button" class="cart-item-remove">
+                        <span class="visually-hidden">Удалить</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"><path fill="#231F20" d="M10.979.728l-.708-.707L5.5 4.792.729.021.021.728 4.793 5.5.021 10.271l.707.708L5.5 6.207l4.771 4.772.708-.708L6.207 5.5z" /></svg>
+                      </button>
+                      <div class="cart-item-image">
+                        <img width="33" height="33" src="img/ice-cream-with-orange-jam.jpg" alt="Пломбир с апельсиновым джемом" />
+                      </div>
+                      <div class="cart-item-name">
+                        <a href="#">Пломбир с апельсиновым джемом</a>
+                      </div>
+                      <div class="cart-item-weight">1,5 кг х 200 руб.</div>
+                      <div class="cart-item-cost">300 руб.</div>
+                      <input type="hidden" name="id" value="1" />
+                    </li>
+                    <li class="cart-item">
+                      <button type="button" class="cart-item-remove">
+                        <span class="visually-hidden">Удалить</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"><path fill="#231F20" d="M10.979.728l-.708-.707L5.5 4.792.729.021.021.728 4.793 5.5.021 10.271l.707.708L5.5 6.207l4.771 4.772.708-.708L6.207 5.5z" /></svg>
+                      </button>
+                      <div class="cart-item-image">
+                        <img width="33" height="33" src="img/strawberry-ice-cream-with-white-chocolate-powder.jpg" alt="Клубничный пломбир с присыпкой из белого шоколада" />
+                      </div>
+                      <div class="cart-item-name">
+                        <a href="#">Клубничный пломбир с присыпкой из белого шоколада</a>
+                      </div>
+                      <div class="cart-item-weight">1,5 кг х 300 руб.</div>
+                      <div class="cart-item-cost">450 руб.</div>
+                      <input type="hidden" name="id" value="2" />
+                    </li>
+                  </ul>
+                  <div class="text-right dropdown-action">
+                    <p class="result">Итого: 750 руб.</p>
+                    <button class="button" type="submit">Оформить заказ</button>
+                  </div>
+                </form>
               </div>
             </div>
           </li>
@@ -416,7 +418,9 @@
         <div class="text-right">
           <ul class="pagination-list">
             <li class="pagination-item">
-              <a class="arrow arrow-left arrow-disabled" href="#"></a>
+              <a class="arrow arrow-left arrow-disabled" href="#">
+                <span class="visually-hidden">Назад</span>
+              </a>
             </li>
             <li class="pagination-item pagination-item-current">
               <a href="#">1</a>
@@ -434,7 +438,9 @@
               <a href="#">5</a>
             </li>
             <li class="pagination-item">
-              <a class="arrow arrow-right" href="#"></a>
+              <a class="arrow arrow-right" href="#">
+                <span class="visually-hidden">Вперёд</span>
+              </a>
             </li>
           </ul>
         </div>
