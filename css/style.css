@@ -781,6 +781,7 @@ a[href^="tel:"].tel-inverted:visited {
   right: 0;
   border: 0;
   outline: 0;
+  width: 100%;
 }
 
 .telephone {
