@@ -122,13 +122,26 @@ a[href^="tel:"].tel-inverted:visited {
   line-height: 24px;
 }
 
+.icon-button {
+  border: 0;
+  background-color: transparent;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.icon-button:focus {
+  outline: solid 1px rgba(46, 136, 228, 0.52);
+}
+
 .button:hover {
   background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
   box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
   color: #ffffff;
 }
 
-.button:active {
+.button:active,
+.button:focus {
   background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
   box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
   color: #ffffff;
@@ -143,6 +156,36 @@ a[href^="tel:"].tel-inverted:visited {
   font-size: 32px;
   text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
   line-height: 44px;
+}
+
+.button-plain {
+  display: inline-block;
+  vertical-align: top;
+  padding: 7px 28px;
+  min-width: 144px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #fcfcfc;
+  border: 2px solid rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  outline: 0;
+}
+
+.button-plain:active,
+.button-plain:focus {
+  padding: 9px 30px;
+  border: 0;
+  background-color: rgba(237, 237, 237, 0.5);
+  box-shadow: inset 0px 2px 1px 0 #696969;
+}
+
+.button-plain:hover {
+  padding: 9px 30px;
+  border: 0;
+  background-color: #ffffff;
+  color: #333333;
 }
 
 /* Модальное окно */
@@ -1053,7 +1096,9 @@ a[href^="tel:"].tel-inverted:visited {
   opacity: 0.8;
 }
 
-.checkbox + label:hover {
+.checkbox + label:hover,
+.checkbox:focus + label,
+.checkbox:active + label {
   opacity: 1;
 }
 
@@ -1067,13 +1112,16 @@ a[href^="tel:"].tel-inverted:visited {
   background-image: url(../img/icons/checkbox-off.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
+  border: 0;
 }
 
 .checkbox:checked + label::before {
   background-image: url(../img/icons/checkbox-on.svg);
 }
 
-.radio + label:hover {
+.radio + label:hover,
+.radio:focus + label,
+.radio:active + label {
   opacity: 1;
 }
 
@@ -1093,6 +1141,7 @@ a[href^="tel:"].tel-inverted:visited {
   background-image: url(../img/icons/radio-off.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
+  border: 0;
 }
 
 .radio:checked + label::before {
@@ -1103,44 +1152,14 @@ a[href^="tel:"].tel-inverted:visited {
   opacity: 0.4;
 }
 
-.plain-button {
-  display: inline-block;
-  vertical-align: top;
-  padding: 7px 28px;
-  min-width: 144px;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 500;
-  color: #fcfcfc;
-  border: 2px solid rgb(255, 255, 255);
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 20px;
-  outline: 0;
-}
-
-.plain-button:active {
-  padding: 9px 30px;
-  border: 0;
-  background-color: rgba(237, 237, 237, 0.5);
-  box-shadow: inset 0px 2px 1px 0 #696969;
-}
-
-.plain-button:hover {
-  padding: 9px 30px;
-  border: 0;
-  background-color: #ffffff;
-  color: #333333;
-}
-
-.range-input {
-  display: inline-block;
-  vertical-align: top;
-  width: auto;
-}
-
 .range-controls {
   position: relative;
   margin: 7px 0;
+}
+
+.range-input-min:focus ~ .range-toggle-min,
+.range-input-max:focus ~ .range-toggle-max {
+  outline: solid 1px rgba(46, 136, 228, 0.52);
 }
 
 .range-controls .scale {

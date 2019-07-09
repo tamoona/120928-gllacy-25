@@ -111,7 +111,7 @@
                 <form action="https://echo.htmlacademy.ru" method="post">
                   <ul class="cart-list">
                     <li class="cart-item">
-                      <button type="button" class="cart-item-remove">
+                      <button type="button" class="icon-button cart-item-remove">
                         <span class="visually-hidden">Удалить</span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"><path fill="#231F20" d="M10.979.728l-.708-.707L5.5 4.792.729.021.021.728 4.793 5.5.021 10.271l.707.708L5.5 6.207l4.771 4.772.708-.708L6.207 5.5z" /></svg>
                       </button>
@@ -126,7 +126,7 @@
                       <input type="hidden" name="id" value="1" />
                     </li>
                     <li class="cart-item">
-                      <button type="button" class="cart-item-remove">
+                      <button type="button" class="icon-button cart-item-remove">
                         <span class="visually-hidden">Удалить</span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"><path fill="#231F20" d="M10.979.728l-.708-.707L5.5 4.792.729.021.021.728 4.793 5.5.021 10.271l.707.708L5.5 6.207l4.771 4.772.708-.708L6.207 5.5z" /></svg>
                       </button>
@@ -191,10 +191,10 @@
                 <div class="scale">
                   <div class="bar"></div>
                 </div>
+                <input id="price-min" type="text" class="range-input range-input-min visually-hidden" name="price-min" value="100" />
                 <label class="visually-hidden" for="price-min">Минимальная цена</label>
-                <input id="price-min" type="text" class="visually-hidden" name="price-min" value="100" />
+                <input id="price-max" type="text" class="range-input range-input-max visually-hidden" name="price-max" value="500" />
                 <label class="visually-hidden" for="price-max">Максимальная цена</label>
-                <input id="price-max" type="text" class="visually-hidden" name="price-max" value="500" />
                 <div class="range-toggle range-toggle-min"></div>
                 <div class="range-toggle range-toggle-max"></div>
               </div>
@@ -264,7 +264,7 @@
               </li>
             </ul>
           </fieldset>
-          <button class="plain-button filter-submit-button" type="submit">Применить</button>
+          <button class="button-plain filter-submit-button" type="submit">Применить</button>
         </form>
       </section>
       <section class="catalog">
