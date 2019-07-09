@@ -226,14 +226,14 @@ a[href^="tel:"].tel-inverted:visited {
   position: relative;
   padding-top: 0;
   display: flex;
-  padding: 5px 0 0 0;
+  padding: 2px 0 0 0;
   box-sizing: border-box;
   width: 100%;
 }
 
 .top-header-logo {
   margin: 0;
-  padding: 0;
+  padding: 6px 0 0 0;
   width: 180px;
 }
 
@@ -245,8 +245,7 @@ a[href^="tel:"].tel-inverted:visited {
 .top-navigation {
   display: flex;
   align-items: center;
-  margin-top: -4px;
-  margin-left: 6px;
+  margin-left: 9px;
   color: #ffffff;
   width: 100%;
 }
@@ -314,7 +313,7 @@ a[href^="tel:"].tel-inverted:visited {
   display: flex;
   width: 1146px;
   flex-direction: column;
-  margin: 0 auto;
+  margin: -2px auto 0 auto;
 }
 
 .site-navigation-item,
@@ -341,7 +340,7 @@ a[href^="tel:"].tel-inverted:visited {
   margin-right: 1px;
   font-weight: 700;
   font-size: 16px;
-  padding: 7px 14px;
+  padding: 6px 14px;
   line-height: 18px;
   border-radius: 25px;
 }
@@ -760,7 +759,7 @@ a[href^="tel:"].tel-inverted:visited {
   max-width: 302px;
   min-height: 302px;
   margin: 0;
-  padding: 28px 25px 32px 25px;
+  padding: 28px 22px 32px 25px;
 }
 
 .form-contacts-text {
@@ -768,7 +767,7 @@ a[href^="tel:"].tel-inverted:visited {
   font-size: 14px;
   line-height: 20px;
   color: #323232;
-  margin: 0 0 21px 0;
+  margin: 0 0 20px 0;
 }
 
 .form-contacts-text b {
@@ -778,7 +777,7 @@ a[href^="tel:"].tel-inverted:visited {
 }
 
 .form-contacts .button {
-  margin-top: 5px;
+  margin-top: 8px;
   width: 100%;
 }
 
@@ -893,7 +892,7 @@ a[href^="tel:"].tel-inverted:visited {
 .footer-copyright-link {
   display: inline-block;
   vertical-align: top;
-  margin: -5px 0 0;
+  margin: -4px 0 0;
 }
 
 .footer-copyright p {
@@ -1013,8 +1012,15 @@ a[href^="tel:"].tel-inverted:visited {
   padding: 0;
   list-style: none;
   border-radius: 20px;
-  padding: 9px 15px 10px 20px;
   background-color: rgba(255, 255, 255, 0.2);
+}
+
+.filter-option-list {
+  padding: 9px 6px 10px 12px;
+}
+
+.filter-range {
+  padding: 9px 24px 10px 21px;
 }
 
 .range-set {
@@ -1043,7 +1049,7 @@ a[href^="tel:"].tel-inverted:visited {
 
 .checkbox + label {
   margin-left: 25px;
-  padding: 0 20px 0 10px;
+  padding: 0 15px 0 9px;
   opacity: 0.8;
 }
 
@@ -1073,7 +1079,7 @@ a[href^="tel:"].tel-inverted:visited {
 
 .radio + label {
   margin-left: 25px;
-  padding: 0 18px 0 10px;
+  padding: 0 13px 0 8px;
   opacity: 0.8;
 }
 
@@ -1145,8 +1151,8 @@ a[href^="tel:"].tel-inverted:visited {
 
 .range-controls .bar {
   position: absolute;
-  left: 10%;
-  right: 20%;
+  left: 8%;
+  right: 37%;
   height: 4px;
   background: #ffffff;
 }
@@ -1165,11 +1171,11 @@ a[href^="tel:"].tel-inverted:visited {
 }
 
 .range-toggle-min {
-  left: 10%;
+  left: 8%;
 }
 
 .range-toggle-max {
-  left: 80%;
+  left: 63%;
 }
 
 .select {
@@ -1179,8 +1185,8 @@ a[href^="tel:"].tel-inverted:visited {
   font-weight: 500;
   line-height: 18px;
   color: #ffffff;
-  margin: 0;
-  padding: 11px 15px 9px 25px;
+  margin: 2px 0 0 0;
+  padding: 6px 23px 11px 16px;
   border: 0;
   outline: 0;
   -webkit-appearance: none;
@@ -1191,7 +1197,7 @@ a[href^="tel:"].tel-inverted:visited {
   background-color: rgba(255, 255, 255, 0.2);
   background-image: url(../img/icons/select-arrow-light.svg);
   background-repeat: no-repeat;
-  background-position: 94% center;
+  background-position: 92% center;
   min-width: 194px;
 }
 
@@ -1263,23 +1269,23 @@ a[href^="tel:"].tel-inverted:visited {
 /* Каталог */
 
 .catalog-main {
-  padding-top: 18px;
+  padding-top: 20px;
 }
 
 .catalog {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  padding-bottom: 42px;
+  padding-bottom: 30px;
 }
 
 .page-title {
   font-size: 35px;
   font-weight: bold;
   line-height: 41px;
-  margin: 0 0 30px 0;
+  margin: 0 0 26px 0;
 }
 
 .catalog-popular {
-  margin-bottom: -120px;
+  margin-bottom: -109px;
 }
 
 .catalog-popular .catalog-item {
@@ -1303,7 +1309,7 @@ a[href^="tel:"].tel-inverted:visited {
   flex-wrap: wrap;
   list-style: none;
   margin: 0 -15px;
-  padding-top: 50px;
+  padding-top: 43px;
 }
 
 .catalog-item {
@@ -1314,7 +1320,11 @@ a[href^="tel:"].tel-inverted:visited {
   padding: 6px 13px 22px 13px;
   box-sizing: border-box;
   text-align: center;
-  margin-top: -50px;
+  margin-top: -47px;
+}
+
+.catalog-item-popular {
+  margin-top: -44px;
 }
 
 .catalog-item:hover {
@@ -1350,12 +1360,8 @@ a[href^="tel:"].tel-inverted:visited {
   z-index: 2;
 }
 
-.catalog-item-popular .catalog-item-image {
-  margin-bottom: 9px;
-}
-
 .catalog-item-image {
-  margin-bottom: 4px;
+  margin-bottom: 10px;
   position: relative;
 }
 
@@ -1375,6 +1381,7 @@ a[href^="tel:"].tel-inverted:visited {
   line-height: 22px;
   text-align: center;
   margin: 0 0 11px 0;
+  padding: 0 5px;
 }
 
 .catalog-item-price {
@@ -1422,7 +1429,7 @@ a[href^="tel:"].tel-inverted:visited {
 .filter-set {
   border: none;
   padding: 0;
-  margin: 0 16px 16px 0;
+  margin: 0 15px 14px 0;
 }
 
 .filter-title {
@@ -1430,12 +1437,12 @@ a[href^="tel:"].tel-inverted:visited {
   line-height: 16px;
   color: #ffffff;
   font-weight: 500;
-  margin: 0 0 6px 17px;
+  margin: 0 0 6px 15px;
   padding: 0 0 0 0;
 }
 
 .filter-submit-button {
-  margin-top: 5px;
+  margin-top: 9px;
 }
 
 /* Хлебные крошки */
@@ -1469,7 +1476,7 @@ a[href^="tel:"].tel-inverted:visited {
 
 .breadcrumbs-item:not(:last-of-type)::after {
   content: "»";
-  padding: 0 4px;
+  padding: 0 3px;
 }
 
 /* Пагинатор */
@@ -1478,7 +1485,7 @@ a[href^="tel:"].tel-inverted:visited {
   display: inline-flex;
   justify-content: space-between;
   position: relative;
-  margin: 5px 0 0 0;
+  margin: 2px 0 0 0;
   padding: 0;
   list-style: none;
   min-width: 200px;
@@ -1513,6 +1520,11 @@ a[href^="tel:"].tel-inverted:visited {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
+.arrow-left::after,
+.arrow-left::before {
+  left: 8px;
+}
+
 .arrow-left::after {
   -webkit-transform: rotate(220deg);
   transform: rotate(220deg);
@@ -1521,6 +1533,11 @@ a[href^="tel:"].tel-inverted:visited {
 .arrow-left::before {
   -webkit-transform: rotate(130deg);
   transform: rotate(130deg);
+}
+
+.arrow-right::after,
+.arrow-right::before {
+  left: 18px;
 }
 
 .arrow-right::after {
@@ -1542,6 +1559,11 @@ a[href^="tel:"].tel-inverted:visited {
   width: 25px;
   height: 25px;
   border-radius: 50%;
+  margin-left: 4px;
+}
+
+.pagination-item:last-child {
+  margin-left: 0;
 }
 
 .pagination-item a {
