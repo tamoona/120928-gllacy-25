@@ -102,7 +102,7 @@ a[href^="tel:"].tel-inverted:visited {
 .button {
   display: inline-block;
   vertical-align: top;
-  padding: 13px 19px;
+  padding: 10px 22px;
   font-weight: bold;
   text-align: center;
   color: #ffffff;
@@ -541,7 +541,7 @@ a[href^="tel:"].tel-inverted:visited {
 }
 
 .index-column {
-  padding: 20px;
+  padding: 22px 20px 20px 20px;
   margin-right: 25px;
   width: 50%;
 }
@@ -562,6 +562,7 @@ a[href^="tel:"].tel-inverted:visited {
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 229px;
+  padding: 16px 22px 20px 18px;
 }
 
 .promo-item:last-child {
@@ -579,11 +580,12 @@ a[href^="tel:"].tel-inverted:visited {
 }
 
 .promo-item-title {
-  margin: 0;
   padding: 0;
   font-size: 35px;
+  line-height: 41px;
   font-weight: bold;
   text-align: left;
+  margin: 0 0 15px 0;
 }
 
 .promo-item-text {
@@ -591,9 +593,8 @@ a[href^="tel:"].tel-inverted:visited {
   font-weight: bold;
   text-align: left;
   color: #ffffff;
-  margin-top: 12px;
-  margin-bottom: 46px;
   line-height: 22px;
+  margin: 0 0 45px 0;
 }
 
 /* Преимущества */
@@ -602,9 +603,9 @@ a[href^="tel:"].tel-inverted:visited {
   border-radius: 15px;
   background-image: url("../img/wafer-background.png");
   margin-bottom: 40px;
-  padding: 20px 22px 20px 20px;
+  padding: 24px 22px 14px 20px;
   background-color: bisque;
-  line-height: 22px;
+  min-height: 306px;
 }
 
 .features-list {
@@ -626,6 +627,7 @@ a[href^="tel:"].tel-inverted:visited {
   width: 50%;
   display: flex;
   padding: 0 15px;
+  margin: 0 0 10px 0;
 }
 
 .feature-item svg {
@@ -634,7 +636,10 @@ a[href^="tel:"].tel-inverted:visited {
 }
 
 .features-item-text {
+  padding: 0;
+  margin: 12px 0 0 0;
   color: #323232;
+  line-height: 22px;
 }
 
 .features-title {
@@ -650,7 +655,7 @@ a[href^="tel:"].tel-inverted:visited {
 .blog {
   background-image: url("../img/strawberry-background.png");
   border-radius: 15px;
-  background-position: -20px -200px;
+  background-position: -30px -230px;
   background-repeat: no-repeat;
   background-color: #ffffff;
   overflow: hidden;
@@ -662,7 +667,7 @@ a[href^="tel:"].tel-inverted:visited {
   line-height: 22px;
   font-weight: 500;
   color: #323232;
-  margin: 0 0 10px 0;
+  margin: 0 0 6px 0;
   padding: 0;
 }
 
@@ -672,7 +677,7 @@ a[href^="tel:"].tel-inverted:visited {
   font-weight: bold;
   padding: 0;
   margin: 0;
-  max-width: 280px;
+  max-width: 300px;
 }
 
 .subscribe {
@@ -688,13 +693,13 @@ a[href^="tel:"].tel-inverted:visited {
 
 .subscription-inner {
   background-color: #fff;
-  padding: 33px 22px 38px 22px;
+  padding: 29px 22px 28px 22px;
   border-radius: 15px;
 }
 
 .subscribe-text {
   padding: 0;
-  margin: 0 0 34px 0;
+  margin: 0 0 36px 0;
   color: #000000;
   font-size: 16px;
   line-height: 22px;
@@ -708,7 +713,7 @@ a[href^="tel:"].tel-inverted:visited {
 }
 
 .subscription-form .input {
-  margin: 0 10px 0 0;
+  margin: 0 6px 0 0;
   flex: 1;
 }
 
@@ -1251,7 +1256,7 @@ a[href^="tel:"].tel-inverted:visited {
 }
 
 .catalog-popular {
-  margin-bottom: -95px;
+  margin-bottom: -120px;
 }
 
 .catalog-popular .catalog-item {
@@ -1322,8 +1327,12 @@ a[href^="tel:"].tel-inverted:visited {
   z-index: 2;
 }
 
+.catalog-item-popular .catalog-item-image {
+  margin-bottom: 9px;
+}
+
 .catalog-item-image {
-  margin-bottom: 16px;
+  margin-bottom: 4px;
   position: relative;
 }
 
