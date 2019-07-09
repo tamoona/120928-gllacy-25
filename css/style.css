@@ -101,6 +101,7 @@ a[href^="tel:"].tel-inverted:visited {
 
 .button {
   display: inline-block;
+  vertical-align: top;
   padding: 13px 19px;
   font-weight: bold;
   text-align: center;
@@ -460,6 +461,7 @@ a[href^="tel:"].tel-inverted:visited {
 
 .slider-controls label {
   display: inline-block;
+  vertical-align: top;
   width: 17px;
   height: 17px;
   margin-right: 8px;
@@ -768,6 +770,7 @@ a[href^="tel:"].tel-inverted:visited {
 
 .social-button {
   display: inline-block;
+  vertical-align: top;
 }
 
 .social-button svg {
@@ -822,6 +825,7 @@ a[href^="tel:"].tel-inverted:visited {
 .footer-navigation {
   list-style: none;
   display: inline-block;
+  vertical-align: top;
   flex-direction: column;
 }
 
@@ -981,11 +985,13 @@ a[href^="tel:"].tel-inverted:visited {
 
 .filter-option {
   display: inline-block;
+  vertical-align: top;
 }
 
 .filter-option label {
   position: relative;
   display: inline-block;
+  vertical-align: top;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -1055,6 +1061,7 @@ a[href^="tel:"].tel-inverted:visited {
 
 .plain-button {
   display: inline-block;
+  vertical-align: top;
   padding: 7px 28px;
   min-width: 144px;
   font-size: 16px;
@@ -1083,6 +1090,7 @@ a[href^="tel:"].tel-inverted:visited {
 
 .range-input {
   display: inline-block;
+  vertical-align: top;
   width: auto;
 }
 
@@ -1398,6 +1406,7 @@ a[href^="tel:"].tel-inverted:visited {
 
 .breadcrumbs-item {
   display: inline-block;
+  vertical-align: top;
 }
 
 .breadcrumbs a {
