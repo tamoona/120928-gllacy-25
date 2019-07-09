@@ -601,7 +601,7 @@ a[href^="tel:"].tel-inverted:visited {
   font-weight: bold;
   text-align: right;
   line-height: 24px;
-  bottom: -45px;
+  bottom: -42px;
   right: 0;
 }
 
@@ -851,8 +851,12 @@ a[href^="tel:"].tel-inverted:visited {
   font-weight: bold;
 }
 
+.form-contacts .tel-inverted {
+  margin-top: 3px;
+}
+
 .form-contacts .button {
-  margin-top: 8px;
+  margin-top: 6px;
   width: 100%;
 }
 
@@ -1350,7 +1354,7 @@ a[href^="tel:"].tel-inverted:visited {
 }
 
 .catalog-popular {
-  margin-bottom: -109px;
+  margin-bottom: -107px;
 }
 
 .catalog-popular .catalog-item {
