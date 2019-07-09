@@ -189,12 +189,26 @@ a[href^="tel:"].tel-inverted:visited {
 }
 
 /* Модальное окно */
-@keyframes zoom-out {
+@-webkit-keyframes zoom-out {
   from {
+    -webkit-transform: scale(0.7);
     transform: scale(0.7);
     opacity: 0;
   }
   to {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes zoom-out {
+  from {
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: scale(1);
     transform: scale(1);
     opacity: 1;
   }
@@ -228,7 +242,9 @@ a[href^="tel:"].tel-inverted:visited {
 }
 
 .backdrop.open .modal {
+  -webkit-animation: zoom-out 0.5s;
   animation: zoom-out 0.5s;
+  -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
 
