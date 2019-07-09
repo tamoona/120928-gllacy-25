@@ -454,15 +454,15 @@ a[href^="tel:"].tel-inverted:visited {
   color: #323232;
 }
 
-.dropdown-link:active {
-  color: #323232;
-  background-color: #f6b5a5;
-}
-
 .dropdown-link:hover,
 .dropdown-link:focus {
   color: #323232;
   background-color: #fbded7;
+}
+
+.dropdown-link:active {
+  color: #323232;
+  background-color: #f6b5a5;
 }
 
 .dropdown-item-featured .dropdown-link {
@@ -1305,7 +1305,7 @@ a[href^="tel:"].tel-inverted:visited {
 
 .catalog {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  padding-bottom: 30px;
+  padding-bottom: 28px;
 }
 
 .page-title {
@@ -1516,7 +1516,7 @@ a[href^="tel:"].tel-inverted:visited {
   display: inline-flex;
   justify-content: space-between;
   position: relative;
-  margin: 2px 0 0 0;
+  margin: 4px 0 0 0;
   padding: 0;
   list-style: none;
   min-width: 200px;
@@ -1568,7 +1568,7 @@ a[href^="tel:"].tel-inverted:visited {
 
 .arrow-right::after,
 .arrow-right::before {
-  left: 18px;
+  left: 10px;
 }
 
 .arrow-right::after {
@@ -1587,8 +1587,6 @@ a[href^="tel:"].tel-inverted:visited {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 25px;
-  height: 25px;
   border-radius: 50%;
   margin-left: 4px;
 }
@@ -1597,20 +1595,31 @@ a[href^="tel:"].tel-inverted:visited {
   margin-left: 0;
 }
 
+.pagination-item:last-child {
+  position: relative;
+  left: 8px;
+}
+
 .pagination-item a {
+  display: inline-block;
+  vertical-align: top;
+  width: 25px;
+  height: 25px;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
+  padding-top: 3px;
   color: #ffffff;
   text-decoration: none;
+  border-radius: 50%;
 }
 
-.pagination-item:hover,
-.pagination-item:focus {
+.pagination-item a:hover,
+.pagination-item a:focus {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-.pagination-item:active {
+.pagination-item a:active {
   background-color: #ffffff;
   color: #333333;
 }
