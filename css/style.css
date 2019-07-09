@@ -1106,12 +1106,11 @@ a[href^="tel:"].tel-inverted:visited {
 .checkbox + label {
   margin-left: 25px;
   padding: 0 15px 0 9px;
-  opacity: 0.8;
 }
 
-.checkbox + label:hover,
-.checkbox:focus + label,
-.checkbox:active + label {
+.checkbox + label:hover::before,
+.checkbox:focus + label::before,
+.checkbox:active + label::before {
   opacity: 1;
 }
 
@@ -1126,22 +1125,23 @@ a[href^="tel:"].tel-inverted:visited {
   background-repeat: no-repeat;
   background-position: 0 0;
   border: 0;
+  opacity: 0.8;
 }
 
 .checkbox:checked + label::before {
   background-image: url(../img/icons/checkbox-on.svg);
+  opacity: 1;
 }
 
-.radio + label:hover,
-.radio:focus + label,
-.radio:active + label {
+.radio + label:hover::before,
+.radio:focus + label::before,
+.radio:active + label::before {
   opacity: 1;
 }
 
 .radio + label {
   margin-left: 25px;
   padding: 0 13px 0 8px;
-  opacity: 0.8;
 }
 
 .radio + label::before {
@@ -1151,6 +1151,7 @@ a[href^="tel:"].tel-inverted:visited {
   height: 25px;
   top: -3px;
   left: -27px;
+  opacity: 0.8;
   background-image: url(../img/icons/radio-off.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1159,6 +1160,7 @@ a[href^="tel:"].tel-inverted:visited {
 
 .radio:checked + label::before {
   background-image: url(../img/icons/radio-on.svg);
+  opacity: 1;
 }
 
 .radio:disabled + label {
