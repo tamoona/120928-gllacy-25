@@ -83,6 +83,10 @@ a[href^="tel:"].tel-inverted:visited {
   position: relative;
 }
 
+.new-line {
+  display: block;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -723,6 +727,7 @@ a[href^="tel:"].tel-inverted:visited {
   background-image: url(../img/map.png);
   background-color: #ffffff;
   background-size: cover;
+  background-position: 50% 50%;
   min-height: 430px;
 }
 
@@ -755,7 +760,7 @@ a[href^="tel:"].tel-inverted:visited {
   max-width: 302px;
   min-height: 302px;
   margin: 0;
-  padding: 32px 25px;
+  padding: 28px 25px 32px 25px;
 }
 
 .form-contacts-text {
@@ -763,7 +768,7 @@ a[href^="tel:"].tel-inverted:visited {
   font-size: 14px;
   line-height: 20px;
   color: #323232;
-  margin: 0 0 23px 0;
+  margin: 0 0 21px 0;
 }
 
 .form-contacts-text b {
@@ -773,6 +778,7 @@ a[href^="tel:"].tel-inverted:visited {
 }
 
 .form-contacts .button {
+  margin-top: 5px;
   width: 100%;
 }
 
@@ -780,7 +786,7 @@ a[href^="tel:"].tel-inverted:visited {
 
 .communication {
   display: flex;
-  padding-top: 29px;
+  padding-top: 20px;
 }
 
 .social-button {
@@ -792,6 +798,8 @@ a[href^="tel:"].tel-inverted:visited {
   border: 3px solid #c2cec7;
   border-radius: 50%;
   color: #e6ebe9;
+  width: 35px;
+  height: 35px;
 }
 
 .social-button g {
@@ -817,12 +825,14 @@ a[href^="tel:"].tel-inverted:visited {
 .social-media {
   padding: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   list-style: none;
+  flex-wrap: wrap;
+  max-width: 300px;
 }
 
 .social-media-item {
-  margin-right: 14px;
+  margin: 0 14px 5px 0;
 }
 
 .footer-additional-information {
@@ -842,6 +852,13 @@ a[href^="tel:"].tel-inverted:visited {
   display: inline-block;
   vertical-align: top;
   flex-direction: column;
+  margin: 10px 30px 0 0;
+  max-width: 300px;
+  padding: 0;
+}
+
+.footer-navigation:last-child {
+  margin-right: 0;
 }
 
 .footer-navigation-highlited a {
@@ -871,6 +888,12 @@ a[href^="tel:"].tel-inverted:visited {
   line-height: 18px;
   font-weight: normal;
   color: #fefefe;
+}
+
+.footer-copyright-link {
+  display: inline-block;
+  vertical-align: top;
+  margin: -5px 0 0;
 }
 
 .footer-copyright p {
