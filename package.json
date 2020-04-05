@@ -1,0 +1,22 @@
+{
+  "name": "120928-gllacy-25",
+  "version": "1.0.0",
+  "description": "- Студент: [Anastasia Alimpieva](https://up.htmlacademy.ru/htmlcss/25/user/120928). - Наставник: Юлия Антонова.",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "push-dir --dir=. --branch=gh-pages --cleanup"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tamoona/120928-gllacy-25.git"
+  },
+  "author": "Anastasia Alimpieva <nanitamoonaboo@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tamoona/120928-gllacy-25/issues"
+  },
+  "homepage": "https://github.com/tamoona/120928-gllacy-25#readme",
+  "devDependencies": {
+    "push-dir": "^0.4.1"
+  }
+}
